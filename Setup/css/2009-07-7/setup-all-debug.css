@@ -1,0 +1,911 @@
+/**
+ * fixes to the extjs css files 
+ *
+ * @license     http://www.gnu.org/licenses/agpl.html AGPL Version 3
+ * @author      Cornelius Weiss <c.weiss@metaways.de>
+ * @copyright   Copyright (c) 2007-2008 Metaways Infosystems GmbH (http://www.metaways.de)
+ * @version     $Id: setup-all-debug.css,v 1.1 2009/12/08 23:16:22 hyokos Exp $
+ */
+
+/**
+ * Ext sets the z-index for masks to 20000 and for windows to 9000. As such
+ * Windows get hidden when a underlaying element gets masked. To fix this we set
+ * the mask index to 5000
+ */
+.ext-el-mask {z-index: 5000;}
+.ext-el-mask-msg {z-index: 5001;}
+html, body {
+	font:normal 12px verdana;
+	margin:0;
+	padding:0;
+	border:0 none;
+	overflow:hidden;
+	height:100%;
+}
+
+/* ----- actions -------------------------------------------------------------*/
+.action_edit {
+    background-image:url(../../../images/oxygen/16x16/actions/edit.png) !important;
+}
+
+.action_rename {
+    background-image:url(../../../images/oxygen/16x16/actions/document-properties.png) !important;
+}
+
+.action_delete {
+    background-image:url(../../../images/oxygen/16x16/actions/edit-delete.png) !important;
+}
+
+.action_duplicate {
+    background-image:url(../../../images/oxygen/16x16/actions/edit-copy.png) !important;
+}
+
+.action_applyChanges {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-ok-apply.png) !important;
+}
+
+.action_cancel {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-cancel.png) !important;
+}
+
+.action_saveAndClose {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-ok.png) !important;
+}
+
+.action_managePermissions {
+    background-image:url(../../../images/oxygen/16x16/actions/password.png) !important;
+}
+
+.action_addContact {
+    background-image:url(../../../images/oxygen/16x16/actions/add-user.png) !important;
+}
+
+.action_deleteContact {
+    background-image:url(../../../images/oxygen/16x16/actions/delete-user.png) !important;
+}
+
+.action_exportAsPdf {
+    background-image:url(../../../images/oxygen/16x16/mimetypes/pdf.png) !important;
+}
+
+.action_showArchived {
+    background-image:url(../../../images/oxygen/16x16/actions/ark-extract.png) !important;
+}
+
+.action_hideArchived {
+    background-image:url(../../../images/oxygen/16x16/actions/ark-delete.png) !important;
+}
+
+.action_logOut {
+    background-image:url(../../../images/oxygen/16x16/actions/system-shutdown.png) !important;
+}
+
+.action_selectUser {
+    background-image:url(../../../images/oxygen/16x16/actions/user-female.png) !important;
+}
+
+.action_selectGroup {
+    background-image:url(../../../images/oxygen/16x16/actions/users.png) !important;
+}
+.action_tag {
+    background-image:url(../../../images/oxygen/16x16/actions/rss-tag.png) !important;
+}
+.action_uploadImage {
+    background-image:url(../../../images/oxygen/16x16/actions/insert-image.png) !important;
+}
+.action_cropImage {
+	background-image:url(../../../images/oxygen/16x16/actions/select-rectangular.png) !important;
+}
+.action_originalImage {
+    background-image:url(../../../images/oxygen/16x16/mimetypes/image-jpeg2000.png) !important;
+}
+.action_export {
+    background-image:url(../../../images/oxygen/16x16/actions/view-sort-descending.png) !important;
+}	
+.action_import {
+    background-image:url(../../../images/oxygen/16x16/actions/view-sort-ascending.png) !important;
+}   
+.action_preferences {
+    background-image:url(../../../images/oxygen/16x16/actions/exec.png) !important;
+}   
+.action_about {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-information.png) !important;
+}
+
+.action_adminMode {
+    background-image:url(../../../images/oxygen/16x16/apps/systemtray.png) !important;
+}
+
+/* ----- about dialog --------------------------------------------------------*/
+.tb-about-dlg {
+    text-align: center;
+}
+.tb-about-version{
+    margin-top: 50px;
+    font-weight: bold;
+}
+.tb-about-build {
+    font-size: smaller;
+}
+.tb-about-copyright {
+    margin-top: 50px;
+}
+
+/* ----- renderer ------------------------------------------------------------*/
+.renderer {
+    width: 12px;
+    float: left;
+    padding-left: 5px;
+}
+
+.renderer_accountUserIcon {
+    background-image:url(../../../images/oxygen/16x16/actions/user-female.png) !important;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+.renderer_accountGroupIcon {
+    background-image:url(../../../images/oxygen/16x16/actions/users.png) !important;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+.renderer_accountContactIcon {
+    background-image:url(../../../images/oxygen/16x16/actions/user.png) !important;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+/* ----- notes ------------------------------------------------------------*/
+.notes_noteIcon {
+   background-image:url(../../../images/oxygen/16x16/actions/note.png) !important;
+}
+.notes_telephoneIcon {
+   background-image:url(../../../images/oxygen/16x16/apps/kcall.png) !important;
+}
+.notes_emailIcon {
+   background-image:url(../../../images/oxygen/16x16/actions/kontact-mail.png) !important;
+}
+
+.notes_createdIcon {
+   background-image:url(../../../images/oxygen/16x16/actions/knewstuff.png) !important;
+}
+
+.notes_changedIcon {
+   background-image:url(../../../images/oxygen/16x16/actions/document-properties.png) !important;
+}
+
+.descriptionIcon {
+   background-image:url(../../../images/oxygen/16x16/apps/kwrite.png) !important;
+}
+
+/* ----- appchooser panel-----------------------------------------------------*/
+.app-panel-title {
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 7px;
+}
+.app-panel-header-active {
+    background:transparent url(../../../library/ExtJS/resources/images/default/panel/light-hd.gif) repeat-x scroll 0pt -9px;
+    /*background:#EBF3FD url(../../../library/ExtJS/resources/images/default/grid/grid3-hrow-over.gif) repeat-x scroll left bottom;*/
+}
+.app-panel-header-over {
+    /*background:transparent url(../../../library/ExtJS/resources/images/default/panel/light-hd.gif) repeat-x scroll 0pt -9px;*/
+    background:#EBF3FD url(../../../library/ExtJS/resources/images/default/grid/grid3-hrow-over.gif) repeat-x scroll left bottom;
+}
+
+.app-panel-appicon-text {
+    position: absolute;
+    top: 0px;
+    width: 20px;
+    overflow: hidden;
+}
+
+.app-panel-apptitle-text {
+    margin-left: 5px;
+}
+
+/******* grid row classes *********/
+.grid_row_enabled td{
+	font-weight: bold;
+	/* background-color: '#b5efc8'; */
+}
+
+.grid_row_disabled td{
+    /* background-color: '#efb5b5'; */
+}
+
+/******** downloads ***********/
+
+.tinebase-download-link{
+	cursor: pointer;
+	color: blue;
+}
+
+span:hover.tinebase-download-link {
+    color: #4444ff;
+}
+
+/******** email ***********/
+
+a:hover.tinebase-email-link {
+    color: #4444ff;
+}
+
+.tinebase-addtocontacts-link{
+    cursor: pointer;
+    color: blue;
+}
+
+span:hover.tinebase-addtocontacts-link {
+    color: #4444ff;
+}
+
+.tinebase-showheaders-link{
+    cursor: pointer;
+    color: blue;
+}
+
+span:hover.tinebase-showheaders-link {
+    color: #4444ff;
+}
+
+/**
+ * make form elements small in text and height 
+ *
+ * @license     http://www.gnu.org/licenses/agpl.html AGPL Version 3
+ * @author      Cornelius Weiss <c.weiss@metaways.de>
+ * @copyright   Copyright (c) 2007-2008 Metaways Infosystems GmbH (http://www.metaways.de)
+ * @version     $Id: setup-all-debug.css,v 1.1 2009/12/08 23:16:22 hyokos Exp $
+ */
+ 
+.x-tool-toggle-expander {
+    position: relative;
+    top: -23px;
+    left: 1px;
+    margin-bottom: -15px;
+}
+
+.x-ux-form-icontextfield-labelicon {
+    width: 13px;
+    height: 13px;
+}
+
+.ext-strict .x-form-text {
+    height: 15px;
+}
+
+.ext-safari .x-form-text {
+    height: 17px;
+}
+
+.x-form-field {
+    font-size: 11px;
+}
+
+.x-form-check-wrap, .x-form-radio-wrap {
+    padding: 0;
+}
+
+.x-form-check {
+    margin-bottom: 8px;
+}
+
+.x-form-cb-label {
+	/*position: absolute;*/
+	top: -4px
+}
+
+.x-form-item {
+    font-size: 11px;
+    /*font-weight: bold;*/
+    margin-bottom: 2px;
+}
+
+.x-fieldset {
+    padding: 5px 5px 0px 5px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.x-form-field-wrap .x-form-trigger {
+    height: 18px;
+}
+
+.ext-safari .x-form-field-wrap .x-form-trigger {
+    height: 18px;
+}
+
+.ext-safari .x-small-editor .x-form-trigger {
+    height: 17px;
+}
+
+.x-tab-strip-top .x-tab-strip-active .x-tab-right span.x-tab-strip-text {
+    padding-bottom: 3px;
+}
+
+.x-tab-strip span.x-tab-strip-text {
+    padding:3px 0pt;
+}
+
+.ext-ie .x-form-twin-triggers {
+    padding-top: 6px;
+    padding-left: 0;
+}
+
+.x-ux-connectionstatus-online {
+    background-image: url(../../../images/oxygen/16x16/status/user-online.png) !important;;
+}
+
+.x-ux-connectionstatus-offline {
+    background-image: url(../../../images/oxygen/16x16/status/user-offline.png) !important;;
+}
+
+.x-ux-connectionstatus-unknown {
+    background-image: url(../../../images/oxygen/16x16/categories/system-help.png) !important;;
+}
+.x-panel-footer-wizard {
+    border-color:#a9bfd3;
+    border-style:solid;
+    border-width:0 1px 1px 1px;
+    background:#d0def0 url(../images/default/toolbar/bg.gif) repeat-x top left;
+}
+
+.x-panel-footer-wizard-status {
+    padding-left: 5px;
+    padding-top: 11px;
+    color:#15428b;
+    font:bold 11px tahoma,arial,verdana,sans-serif;
+    float:left;
+    width:auto;
+}
+
+/*
+ * @license     http://www.gnu.org/licenses/agpl.html AGPL Version 3
+ * @author      Cornelius Weiss <c.weiss@metaways.de>
+ * @copyright   Copyright (c) 2007-2008 Metaways Infosystems GmbH (http://www.metaways.de)
+ * @version     $Id: setup-all-debug.css,v 1.1 2009/12/08 23:16:22 hyokos Exp $
+ */
+.PercentRenderer {
+    height: 12px;
+}
+
+.PercentRendererText {
+    color:#000000;
+    font-size:9px;
+    font-weight:bold;
+    left:0pt;
+    overflow:hidden;
+    padding:0px 5px;
+    position:absolute;
+    text-align:center;
+}
+
+.x-date-picker-wk {
+    background:#F0F0F0 url(../../../library/ExtJS/resources/images/gray/toolbar/bg.gif) repeat-x scroll left top;
+	border-color:#D0D0D0;
+	border-right:1px solid #D0D0D0;
+	text-align: center;
+	vertical-align:middle;
+}
+.x-grid3-quickadd .x-grid3-header {
+    background: #f9f9f9 url(../../../images/grid3-dblhrow.gif) repeat-x left top;
+}
+
+.x-grid3-quickadd .new-task-row {
+    height:24px;
+}
+.x-grid3-quickadd .new-task-row .x-small-editor {
+    overflow:hidden;
+    width:100%;
+}
+.x-grid3-quickadd .new-task-row .x-small-editor input {
+    font-size:11px;
+}
+.x-ux-form-icontextfield-labelicon {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+    margin-top: -3px;  
+}
+
+.x-ux-pagingtb-main {
+    background-image: url(../../../images/oxygen/16x16/actions/table.png) !important;
+}
+
+.x-ux-pagingtb-deselect {
+    background-image: url(../../../images/oxygen/16x16/actions/edit-clear-list.png) !important;
+}
+
+.x-ux-pagingtb-selectvisible {
+    background-image: url(../../../images/oxygen/16x16/actions/edit-select-all.png) !important;
+}
+
+.x-ux-pagingtb-selectall {
+    background-image: url(../../../images/oxygen/16x16/actions/insert-table.png) !important;
+}
+
+.x-ux-pagingtb-toggle {
+    background-image: url(../../../images/oxygen/16x16/actions/system-switch-user.png) !important;
+}
+
+.ext-ux-grid-gridviewmenuplugin-menuBtn.x-grid3-hd-btn {
+    display:block;
+}
+
+.ext-ux-grid-gridviewmenuplugin-menuBtn.x-grid3-hd-btn {
+    background-image:url(../../../images/GridViewMenu.png);
+    width:16px;
+}
+
+a.ext-ux-grid-gridviewmenuplugin-menuBtn.x-grid3-hd-btn:hover {
+    background-position:-16px center;
+}
+
+.x-tool-expand .x-tool-toggle {
+    background-position:0pt -195px;
+}
+
+.x-tool-collapse .x-tool-toggle {
+    background-position:0pt -210px;
+}
+.x-ux-from-imagefield-text {
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+﻿.x-form-spinner-proxy{
+	/*background-color:#ff00cc;*/
+}
+.x-form-field-wrap .x-form-spinner-trigger {
+    background:transparent url(../../../images/spinner.gif) no-repeat 0 0;
+}
+
+.x-form-field-wrap .x-form-spinner-overup{
+    background-position:-17px 0;
+}
+.x-form-field-wrap .x-form-spinner-clickup{
+    background-position:-34px 0;
+}
+.x-form-field-wrap .x-form-spinner-overdown{
+    background-position:-51px 0;
+}
+.x-form-field-wrap .x-form-spinner-clickdown{
+    background-position:-68px 0;
+}
+
+
+.x-trigger-wrap-focus .x-form-spinner-trigger{
+    background-position:-85px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-overup{
+    background-position:-102px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-clickup{
+    background-position:-119px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-overdown{
+    background-position:-136px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-clickdown{
+    background-position:-153px 0;
+}
+.x-trigger-wrap-focus .x-form-trigger{
+    border-bottom: 1px solid #7eadd9;
+}
+
+.x-form-field-wrap .x-form-spinner-splitter {
+	line-height:1px;
+	font-size:1px;
+    background:transparent url(../../../images/spinner-split.gif) no-repeat 0 0;
+	position:absolute;
+	cursor: n-resize;
+}
+.x-trigger-wrap-focus .x-form-spinner-splitter{
+    background-position:-14px 0;
+}
+
+.x-form-field-wrap .x-form-locked-trigger{
+    background-image: url(../../../images/locked-lockCombo.gif);
+    cursor:pointer;
+}
+
+.x-form-field-wrap .x-form-unlocked-trigger{
+    background-image: url(../../../images/unlocked-lockCombo.gif);
+    cursor:pointer;
+}
+.x-ux-menu-title {
+    background: #ebeadb url(../../../library/ExtJS/resources/images/default/grid/grid3-hrow.gif) repeat-x;
+    border-bottom:1px solid #99bbe8;
+    color:#15428b;
+    font:bold 10px tahoma,arial,verdana,sans-serif;
+    display:block;
+    padding:3px;
+}
+.x-panel-footer .x-form-item label {
+    float: left;
+}
+.x-panel-footer .x-form-item div {
+    padding-top: 0px;
+}
+.tw-editdialog .x-panel-footer {
+	background-color: rgb(240, 240, 240);
+}
+.x-widget-tag-action-detach {
+    background-image:url(../../../images/oxygen/16x16/actions/draw-eraser.png) !important;
+}
+
+.x-widget-tag-tagitem {
+	margin: 1px 2px 1px 1px;
+	background-color: #FFF8E0;
+	height: 13px;
+    border: 1px solid gray;
+	float: left;
+	color: gray;
+}
+
+.x-widget-tag-tagitem-color {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	float: left;
+	background-color: #FFFFFF;
+	border-right: 1px solid gray;
+	widht: 4px;
+	height: 13px;
+}
+
+.x-widget-tag-tagitem-text {
+	padding: 0 5px 0 5px;
+    margin: 0 0 0 0;
+    line-height: 13px;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: italic;
+   
+}
+
+.x-widget-tag-tagitem-over {
+    /*background-color: #EFEFEF;*/
+    border: 1px solid black;
+    color: black;
+}
+
+.x-widget-tag-tagitem-selected {
+    background-color: #FFFFCE;
+    border: 1px solid black;
+    color: black;
+}
+
+.x-widget-tag-qtip-occurrence {
+    font-size: 8px;
+    font-style: bold;
+}
+.action_delThisFilter {
+    /*background-image:url(../../../images/oxygen/16x16/actions/edit-clear-locationbar-rtl.png) !important;*/
+    background-image:url(../../../images/minus-gray.png) !important;
+}
+
+.action_delAllFilter {
+    background-image:url(../../../images/x-gray.png) !important;
+}
+
+.action_addFilter {
+    background-image:url(../../../images/plus-gray.png) !important;
+}
+
+.action_saveFilter {
+    background-image:url(../../../images/oxygen/16x16/actions/document-save.png) !important;
+}
+
+.action_startFilter {
+    background-image:url(../../../images/oxygen/16x16/actions/edit-find.png) !important;
+}
+
+.tw-filtertoolbar  { 
+	background-color: #f0f0f0;
+}
+
+
+.tw-filtertoolbar  td { 
+	padding: 0px 5px 1px;
+}
+
+.tw-filtertoolbar .tw-ftb-frow-pbutton { 
+    padding: 0px 0px 0px;
+}
+
+.tw-filtertoolbar .tw-ftb-frow-mbutton { 
+    padding: 0px 0px 0px;
+}
+
+.tw-filtertoolbar .tw-ftb-frow-prefix {
+	text-align: right;
+}
+
+/* fix Ext.Button Layout */
+.tw-filtertoolbar .x-btn td {
+    padding: 0px;
+}
+.tw-filtertoolbar .x-btn-icon .x-btn-center {
+    padding:1px;
+}
+
+/*
+.tw-filtertoolbar .fw-ftb-actionrow td { 
+    padding: 0px 5px 1px;
+}
+*/
+
+.x-form-field-wrap .x-form-account-trigger {
+    background-image:url(../../../images/account-trigger.gif);
+    cursor:pointer;
+}
+.preview-panel{
+	padding:5px;
+	white-space:normal;
+	height:103px;
+	background-color:#e5edf8;
+	position:relative;
+	display:inline;
+	}
+.preview-panel img {
+    vertical-align: middle;
+    }
+.preview-panel-left{
+    float:left;
+    font-size:10px;
+    color: #404040;
+    font-family:verdana;
+    line-height: 16px;
+    }
+.preview-panel-right{
+    float:right;
+    font-size:10px;
+    color: #404040;
+    font-family:verdana;
+    line-height: 16px;
+    }
+.preview-panel-bold{
+font-weight: bold;
+	}
+.preview-panel-image{
+	vertical-align:middle;
+	margin:5px 2px 5px 5px;
+	width:90px;
+	height:113px;
+	padding:0px
+	}
+.preview-panel-office{
+	width:360px;
+	margin:5px 2px 5px 5px;
+	}
+.preview-panel-privat{
+	width:360px;
+	margin:5px 2px 5px 5px;
+	}
+.preview-panel-description {
+	width: 200px;
+	position: relative;  
+    height: 97px;
+    margin:5px 2px 5px 5px;
+    padding: 5px;
+    border: solid 3px #e5e6fe;
+    position: relative;
+    }
+.preview-panel-description,
+.preview-panel-description a,
+.preview-panel-description a:link,
+.preview-panel-description a:visited,
+.preview-panel-description a:hover,
+.preview-panel-description a:active {
+	 color:#a0a0a0;
+	 text-decoration: none;
+	}
+.preview-panel-timesheet-description {
+	width: 98%;
+	position: relative;  
+    height: 97px;
+	padding:3px;  
+    position: relative;
+    }	
+	
+.preview-panel-address{
+	width:150px;
+	padding: 5px;
+	}
+.preview-panel-contact{
+	width:180px;
+	padding: 5px;
+	}
+.bordercorner_1{
+ background-image: url(../../../images/preview/bordercorner_blue_1.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    }
+.bordercorner_2{
+    background-image: url(../../../images/preview/bordercorner_blue_2.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 4px;
+    }
+.bordercorner_3{
+    background-image: url(../../../images/preview/bordercorner_blue_3.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    }
+.bordercorner_4{
+    background-image: url(../../../images/preview/bordercorner_blue_4.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    } 
+.preview-panel-adressbook-nobreak{
+min-width:1100px;
+}
+.bordercorner_gray_1{
+ background-image: url(../../../images/preview/bordercorner_gray_1.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 5px;
+    height: 5px;
+    }
+.bordercorner_gray_2{
+    background-image: url(../../../images/preview/bordercorner_gray_2.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 5px;
+    height: 5px;
+    }
+.bordercorner_gray_3{
+    background-image: url(../../../images/preview/bordercorner_gray_3.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    left: -3px;
+    bottom: -3px;
+    width: 5px;
+    height: 5px;
+    }
+.bordercorner_gray_4{
+    background-image: url(../../../images/preview/bordercorner_gray_4.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+    width: 5px;
+    height: 5px;
+    }
+.preview-panel-declaration{
+    color: #a0a0a0;
+    font-size: 18px;
+    position: absolute;
+    font-weight: bold;
+    left: 5px;
+    bottom: 6px;
+    }
+.preview-panel-symbolcompare{
+	color:#a0a0a0;
+	width:45px;
+	text-align: right;
+	display: block;
+	float: left;
+	overflow: hidden;
+	padding-right: 5px;
+	}	
+.preview-panel-timesheet-left {
+	float:left;
+	position: relative;
+	width:48%;
+	height: 102px;
+	padding:5px;
+	margin:5px 2px 5px 5px;
+	font-family:verdana;    
+	}
+.preview-panel-timesheet-right {
+	float:left;
+	position: relative;
+	width:48%;
+	height: 97px;
+	padding:5px;
+	margin:5px 1px 5px 2px;
+	border: solid 3px #e5e6fe;
+	font-family:verdana;
+	}
+.preview-panel-timesheet-leftside{
+	width:180px;
+	padding: 5px;
+	}
+.preview-panel-timesheet-rightside{
+	width:auto;
+	padding: 5px;
+	}
+.preview-panel-timesheet-nobreak{
+min-width:900px;
+}
+
+.prefpanel_adminMode {
+    color: red;
+}
+
+/*
+ * Tine 2.0
+ * 
+ * @package     Setup
+ * @license     http://www.gnu.org/licenses/agpl.html AGPL Version 3
+ * @author      Cornelius Weiss <c.weiss@metaways.de>
+ * @copyright   Copyright (c) 2009 Metaways Infosystems GmbH (http://www.metaways.de)
+ * @version     $Id: setup-all-debug.css,v 1.1 2009/12/08 23:16:22 hyokos Exp $
+ *
+ */
+ 
+.SetupIconCls {
+    background-image:url(../../../images/oxygen/16x16/apps/package-utilities.png) !important;
+}
+
+.setup_info {
+    background-image:url(../../../images/oxygen/16x16/actions/help-about.png) !important;
+}
+
+.setup_action_install {
+    background-image:url(../../../images/oxygen/16x16/actions/list-add.png) !important;
+}
+
+.setup_action_uninstall {
+    background-image:url(../../../images/oxygen/16x16/actions/list-remove.png) !important;
+}
+
+.setup_action_update {
+    background-image:url(../../../images/oxygen/16x16/apps/system-software-update.png) !important;
+}
+
+.setup_checks_success {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-ok-apply.png) !important;
+}
+
+.setup_checks_fail {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-error.png) !important;
+}
+
+.setup_config_manager {
+    background-image:url(../../../images/oxygen/16x16/status/dialog-password.png) !important;
+}
+
+.setup_application_manager {
+    background-image:url(../../../images/oxygen/16x16/apps/systemtray.png) !important;
+}
+
+.setup_action_save_config {
+    background-image:url(../../../images/oxygen/16x16/actions/document-save.png) !important;
+}
+
+.setup_action_download_config {
+    background-image:url(../../../images/oxygen/16x16/actions/mail-get.png) !important;
+}
