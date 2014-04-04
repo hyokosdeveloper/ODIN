@@ -1,4 +1,4 @@
-<?php
+    <?php
 /**
  * main view
  * 
@@ -31,15 +31,16 @@
     <link rel="stylesheet" type="text/css" href="library/ExtJS/resources/css/ext-all.css" />
     <!-- 
     <link rel="stylesheet" type="text/css" href="library/ExtJS/resources/css/xtheme-gray.css" />
-    <link rel="stylesheet" type="text/css" href="library/ExtJS/resources/css/xtheme-darkgray.css" />
     
-    <link rel="stylesheet" type="text/css" href="library/ExtJS/resources/css/xtheme-slate.css" />
-    
+    <link rel="stylesheet" type="text/css" href="library/ExtJS/resources/css/xtheme-darkgray.css" />    
+    <link rel="stylesheet" type="text/css" href="library/ExtJS/resources/css/xtheme-slate.css" />    
+    <link rel="stylesheet" type="text/css" href="library/ExtJS/resources/css/xtheme-gray.css" />
+        
     <link rel="stylesheet" type="text/css" href="library/ExtJS/resources/css/xtheme-black.css" />
     <link rel="stylesheet" type="text/css" href="library/ExtJS/resources/css/xtheme-slickness.css" />
-    
+   
      -->
-    <link rel="stylesheet" type="text/css" href="library/ExtJS/resources/css/xtheme-gray.css" />
+     
 
     
     <?php /*

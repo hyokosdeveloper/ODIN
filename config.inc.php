@@ -4,7 +4,7 @@
 // minimal configuration
 return array(
 	'database' => array(
-        'host'		=> 'mysql.zeusframework.com',
+        'host'		=> 'localhost',
         'dbname'	=> 'odin_demo',
         'username'	=> 'hyokos',
         'password'	=> 'jcmlives',
@@ -12,12 +12,12 @@ return array(
         'tableprefix'	=> 'odin_prod_'
 	),
     'setupuser' => array(
-        'username'      => 'odinsetup',
+        'username'      => 'setup',
         'password'      => 'setup' 
     ),
-   'session.save_path' => '/home/zeuswebserver/tinlab/Apps/Odin/odin.tinlabapps.com/SESSIONS',
+   'session.save_path' =>  '/opt/local/apache2/htdocs/Projects/ODIN/SESSIONS',
    'logger' => array(
-       'filename' => '/home/zeuswebserver/tinlab/Apps/Odin/odin.tinlabapps.com/FRAMEWORK-LOGS/odin-framework.log',
+       'filename' => '/opt/local/apache2/htdocs/Projects/ODIN/FRAMEWORK-LOGS/odin-framework.log',
        'priority' => '7',
        'active' => 1
    ),	   
@@ -31,7 +31,7 @@ return array(
 		   'active' => 1,
 		   'lifetime' => 3600,
 		   'backend' => 'File',
-      	   'path' => '/home/zeuswebserver/tinlab/Apps/Odin/odin.tinlabapps.com/tmp'
+      	   'path' => '/opt/local/apache2/htdocs/Projects/ODIN/tmp'
 	)
 
    
