@@ -1,0 +1,2468 @@
+/*!
+ * Tine 2.0 USER CLIENT
+ * 
+ * license     http://www.gnu.org/licenses/agpl.html AGPL Version 3
+ * copyright   Copyright (c) 2007-2010 Metaways Infosystems GmbH (http://www.metaways.de)
+ *
+ * FOR MORE DETAILED LICENSE AND COPYRIGHT INFORMATION PLEASE CONSULT THE LICENSE FILE 
+ * LOCATED AT: <YOUR TINE 2.0 URL>/LICENSE OR VISIT THE TINE 2.0 HOMEPAGE AT http://www.tine20.org
+ *//**
+ * fixes to the extjs css files 
+ *
+ * @license     http://www.gnu.org/licenses/agpl.html AGPL Version 3
+ * @author      Cornelius Weiss <c.weiss@metaways.de>
+ * @copyright   Copyright (c) 2007-2008 Metaways Infosystems GmbH (http://www.metaways.de)
+ * @version     $Id: tine-all-debug.css,v 1.1 2010/04/13 21:55:59 hyokos Exp $
+ */
+
+/**
+ * Ext sets the z-index for masks to 20000 and for windows to 9000. As such
+ * Windows get hidden when a underlaying element gets masked. To fix this we set
+ * the mask index to 5000
+ */
+.ext-el-mask {z-index: 5000;}
+.ext-el-mask-msg {z-index: 5001;}
+
+/* only included in expamples :-(*/
+.x-menu-title {
+    background: #D6E3F2;
+    border-style: solid;
+    border-color:#DAE6F4 #99bbe8 #99bbe8 #DAE6F4;
+    border-width: 1px;
+    margin:-2px -2px 0;
+    color:#15428b;
+    font:bold 10px tahoma,arial,verdana,sans-serif;
+    display:block;
+    padding:3px;
+}
+html, body {
+	font:normal 12px verdana;
+	margin:0;
+	padding:0;
+	border:0 none;
+	overflow:hidden;
+	height:100%;
+}
+
+/* ----- actions -------------------------------------------------------------*/
+.action_edit {
+    background-image:url(../../../images/oxygen/16x16/actions/edit.png) !important;
+}
+
+.action_editcopy {
+    background-image:url(../../../images/oxygen/16x16/actions/edit-copy.png) !important;
+}
+
+.action_rename {
+    background-image:url(../../../images/oxygen/16x16/actions/document-properties.png) !important;
+}
+
+.action_delete {
+    background-image:url(../../../images/oxygen/16x16/actions/edit-delete.png) !important;
+}
+
+.action_duplicate {
+    background-image:url(../../../images/oxygen/16x16/actions/edit-copy.png) !important;
+}
+
+.action_applyChanges {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-ok-apply.png) !important;
+}
+
+.action_cancel {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-cancel.png) !important;
+}
+
+.action_saveAndClose {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-ok.png) !important;
+}
+
+.action_managePermissions {
+    background-image:url(../../../images/oxygen/16x16/actions/password.png) !important;
+}
+
+.action_addContact {
+    background-image:url(../../../images/oxygen/16x16/actions/add-user.png) !important;
+}
+
+.action_deleteContact {
+    background-image:url(../../../images/oxygen/16x16/actions/delete-user.png) !important;
+}
+
+.action_exportAsPdf {
+    background-image:url(../../../images/oxygen/16x16/mimetypes/pdf.png) !important;
+}
+
+.action_showArchived {
+    background-image:url(../../../images/oxygen/16x16/actions/ark-extract.png) !important;
+}
+
+.action_hideArchived {
+    background-image:url(../../../images/oxygen/16x16/actions/ark-delete.png) !important;
+}
+
+.action_logOut {
+    background-image:url(../../../images/oxygen/16x16/actions/system-shutdown.png) !important;
+}
+
+.action_login {
+    background-image:url(../../../images/oxygen/16x16/actions/view-refresh.png) !important;
+}
+
+.action_selectUser {
+    background-image:url(../../../images/oxygen/16x16/actions/user-female.png) !important;
+}
+
+.action_selectGroup {
+    background-image:url(../../../images/oxygen/16x16/actions/users.png) !important;
+}
+.action_tag {
+    background-image:url(../../../images/oxygen/16x16/actions/rss-tag.png) !important;
+}
+.action_uploadImage {
+    background-image:url(../../../images/oxygen/16x16/actions/insert-image.png) !important;
+}
+.action_cropImage {
+	background-image:url(../../../images/oxygen/16x16/actions/select-rectangular.png) !important;
+}
+.action_originalImage {
+    background-image:url(../../../images/oxygen/16x16/mimetypes/image-jpeg2000.png) !important;
+}
+.action_export {
+    background-image:url(../../../images/oxygen/16x16/actions/file-export.png) !important;
+}
+
+.action_import {
+    background-image:url(../../../images/oxygen/16x16/actions/view-sort-ascending.png) !important;
+}   
+.action_preferences {
+    background-image:url(../../../images/oxygen/16x16/actions/exec.png) !important;
+}   
+.action_about {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-information.png) !important;
+}
+
+.action_adminMode {
+    background-image:url(../../../images/oxygen/16x16/apps/systemtray.png) !important;
+}
+
+.action_composeEmail {
+    background-image:url(../../../images/oxygen/16x16/apps/kmail.png) !important;
+}
+
+.tinebase-action-export-xls {
+    background-image:url(../../../images/oxygen/16x16/mimetypes/application-vnd.ms-excel.png) !important;
+}
+
+.tinebase-action-export-ods {
+    background-image:url(../../../images/oxygen/16x16/mimetypes/application-vnd.oasis.opendocument.spreadsheet.png) !important;
+}
+
+.tinebase-action-export-csv {
+    background-image:url(../../../images/oxygen/16x16/mimetypes/text-csv.png) !important;
+}
+
+/* ----- tree classes --------------------------------------------------------*/
+.tinebase-tree-drop-move  .x-dd-drop-icon {
+    background-image:url(../../../images/oxygen/16x16/places/link.png) !important;
+}
+
+/* ----- login dialog --------------------------------------------------------*/
+.tb-login-panel form {
+    padding: 20px 10px 20px 20px;
+}
+
+.tb-login-lobobox {
+	text-align:right;
+    height: 60px;
+}
+
+.tb-login-big-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+    line-height: 35px;
+}
+
+.tb-login-logo {
+ }
+
+.tb-login-button-spacer {
+	height: 30px;
+}
+
+.tb-login-infosection {
+	padding-left: 20px;
+}
+
+.tb-login-infosection {
+    color: gray;
+    line-height:17px;
+    /*margin-top:-12px;*/
+}
+
+.tb-login-infosection a {
+	text-decoration: none;
+    font-style: normal;
+    color: #1E78AD;
+}
+
+.tb-login-infosection .tb-login-surveypanel {
+    padding-top: 20px;
+}
+
+/* ----- about dialog --------------------------------------------------------*/
+.tb-about-dlg {
+    text-align: center;
+}
+.tb-about-version{
+    margin-top: 50px;
+    font-weight: bold;
+}
+.tb-about-build {
+    font-size: smaller;
+}
+.tb-about-copyright {
+    margin-top: 50px;
+}
+
+/* ----- account renderer ------------------------------------------------------------*/
+.renderer {
+    width: 12px;
+    float: left;
+    padding-left: 5px;
+}
+
+.renderer_accountUserIcon {
+    background-image:url(../../../images/oxygen/16x16/actions/user-female.png) !important;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+.renderer_accountGroupIcon {
+    background-image:url(../../../images/oxygen/16x16/actions/users.png) !important;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+.renderer_accountGroupmemberIcon {
+    background-image:url(../../../images/groupmember.png) !important;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+.renderer_accountContactIcon {
+    background-image:url(../../../images/oxygen/16x16/actions/user.png) !important;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+.tinebase-accounttype-user {
+    background-image:url(../../../images/oxygen/16x16/actions/user-female.png) !important;
+}
+
+.tinebase-accounttype-group {
+    background-image:url(../../../images/oxygen/16x16/actions/users.png) !important;
+}
+
+.tinebase-accounttype-addanyone {
+    background-image:url(../../../images/oxygen/16x16/actions/add-users.png) !important;
+}
+
+/* ----- notes ------------------------------------------------------------*/
+.notes_noteIcon {
+   background-image:url(../../../images/oxygen/16x16/actions/note.png) !important;
+}
+.notes_telephoneIcon {
+   background-image:url(../../../images/oxygen/16x16/apps/kcall.png) !important;
+}
+.notes_emailIcon {
+   background-image:url(../../../images/oxygen/16x16/actions/kontact-mail.png) !important;
+}
+
+.notes_createdIcon {
+   background-image:url(../../../images/oxygen/16x16/actions/knewstuff.png) !important;
+}
+
+.notes_changedIcon {
+   background-image:url(../../../images/oxygen/16x16/actions/document-properties.png) !important;
+}
+
+.descriptionIcon {
+   background-image:url(../../../images/oxygen/16x16/apps/kwrite.png) !important;
+}
+
+/* ----- mainmenu ------------------------------------------------------------*/
+.tine-mainscreen-mainmenu .x-toolbar,
+.tine-mainscreen-mainmenu .x-toolbar .x-btn td {
+    background: none;
+    border: 0;
+}
+
+.tine-mainscreen-mainmenu .x-toolbar-ct {
+    margin-top: -2px;
+}
+
+.tine-mainscreen-mainmenu .x-btn-over td.x-btn-mc,
+.tine-mainscreen-mainmenu .x-btn-over td.x-btn-mc button{
+    text-decoration: underline;
+}
+
+.tine-favicon {
+	background-image:url(../../../images/vulcan.png) !important;
+}
+
+.tinlab-favicon {
+	background-image:url(../../../images/vulcan.png) !important;
+}
+
+.tine-mainscreen-apptabspanel-menu-tabel {
+    margin-right: 5px;
+}
+
+.x-tab-strip li.tine-mainscreen-apptabspanel-menu-tabel a.x-tab-strip-close,
+.x-tab-strip li.tine-mainscreen-apptabspanel-menu-tabel a.x-tab-strip-close:hover {
+    background-image:url("../../../library/ExtJS/resources/images/default/button/arrow.gif");
+    top: 6px;
+}
+
+/* ----- appchooser panel-----------------------------------------------------*/
+.app-panel-title {
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 7px;
+}
+.app-panel-header-active {
+    background:transparent url(../../../library/ExtJS/resources/images/default/panel/light-hd.gif) repeat-x scroll 0pt -9px;
+    /*background:#EBF3FD url(../../../library/ExtJS/resources/images/default/grid/grid3-hrow-over.gif) repeat-x scroll left bottom;*/
+}
+.app-panel-header-over {
+    /*background:transparent url(../../../library/ExtJS/resources/images/default/panel/light-hd.gif) repeat-x scroll 0pt -9px;*/
+    background:#EBF3FD url(../../../library/ExtJS/resources/images/default/grid/grid3-hrow-over.gif) repeat-x scroll left bottom;
+}
+
+.app-panel-appicon-text {
+    position: absolute;
+    top: 0px;
+    width: 20px;
+    overflow: hidden;
+}
+
+.app-panel-apptitle-text {
+    margin-left: 5px;
+}
+
+/******* grid row classes *********/
+.grid_row_enabled td{
+	font-weight: bold;
+	/* background-color: '#b5efc8'; */
+}
+
+.grid_row_disabled td{
+    /* background-color: '#efb5b5'; */
+}
+
+/******** downloads ***********/
+
+.tinebase-download-link{
+	cursor: pointer;
+	color: blue;
+}
+
+span:hover.tinebase-download-link {
+    color: #4444ff;
+}
+
+/******** email ***********/
+
+a:hover.tinebase-email-link {
+    color: #4444ff;
+}
+
+.tinebase-addtocontacts-link{
+    cursor: pointer;
+    color: blue;
+}
+
+span:hover.tinebase-addtocontacts-link {
+    color: #4444ff;
+}
+
+.tinebase-showheaders-link{
+    cursor: pointer;
+    color: blue;
+}
+
+span:hover.tinebase-showheaders-link {
+    color: #4444ff;
+}
+
+/**
+ * make form elements small in text and height 
+ *
+ * @license     http://www.gnu.org/licenses/agpl.html AGPL Version 3
+ * @author      Cornelius Weiss <c.weiss@metaways.de>
+ * @copyright   Copyright (c) 2007-2008 Metaways Infosystems GmbH (http://www.metaways.de)
+ * @version     $Id: tine-all-debug.css,v 1.1 2010/04/13 21:55:59 hyokos Exp $
+ */
+ 
+.x-tool-toggle-expander {
+    position: relative;
+    top: -23px;
+    left: 1px;
+    margin-bottom: -15px;
+}
+
+.x-ux-form-icontextfield-labelicon {
+    width: 13px;
+    height: 13px;
+}
+
+.ext-strict .x-form-text {
+    height: 15px;
+}
+
+.ext-webkit .x-form-text {
+    height: 17px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.x-form-field {
+    font-size: 11px;
+}
+
+.x-form-check-wrap input
+{
+    margin-bottom: 4px;
+}
+
+.x-form-cb-label {
+	top: 1px;
+}
+
+.x-form-item {
+    font-size: 11px;
+    /*font-weight: bold;*/
+    margin-bottom: 2px;
+}
+.ext-gecko .x-window-body .x-form-item {
+	overflow: hidden;
+}
+
+.x-fieldset {
+    padding: 5px 5px 0px 5px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.x-form-field-wrap .x-form-trigger {
+    height: 18px;
+}
+
+.ext-webkit .x-form-field-wrap .x-form-trigger {
+    height: 18px;
+}
+
+.ext-webkit .x-small-editor .x-form-trigger {
+    height: 17px;
+}
+
+.ext-webkit .x-small-editor .x-form-text {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.x-tab-strip-top .x-tab-strip-active .x-tab-right span.x-tab-strip-text {
+    padding-bottom: 3px;
+}
+
+.x-tab-strip span.x-tab-strip-text {
+    padding:3px 0pt;
+}
+
+.ext-ie .x-form-twin-triggers {
+    padding-top: 6px;
+    padding-left: 0;
+}
+
+.x-ux-connectionstatus-online {
+    background-image: url(../../../images/oxygen/16x16/status/user-online.png) !important;;
+}
+
+.x-ux-connectionstatus-offline {
+    background-image: url(../../../images/oxygen/16x16/status/user-offline.png) !important;;
+}
+
+.x-ux-connectionstatus-unknown {
+    background-image: url(../../../images/oxygen/16x16/categories/system-help.png) !important;;
+}
+.x-panel-footer-wizard {
+    border-color:#a9bfd3;
+    border-style:solid;
+    border-width:0 1px 1px 1px;
+    background:#d0def0 url(../images/default/toolbar/bg.gif) repeat-x top left;
+}
+
+.x-panel-footer-wizard-status {
+    padding-left: 5px;
+    padding-top: 11px;
+    color:#15428b;
+    font:bold 11px tahoma,arial,verdana,sans-serif;
+    float:left;
+    width:auto;
+}
+
+/*
+ * @license     http://www.gnu.org/licenses/agpl.html AGPL Version 3
+ * @author      Cornelius Weiss <c.weiss@metaways.de>
+ * @copyright   Copyright (c) 2007-2008 Metaways Infosystems GmbH (http://www.metaways.de)
+ * @version     $Id: tine-all-debug.css,v 1.1 2010/04/13 21:55:59 hyokos Exp $
+ */
+.PercentRenderer {
+    height: 12px;
+}
+
+.PercentRendererText {
+    color:#000000;
+    font-size:9px;
+    font-weight:bold;
+    left:0pt;
+    overflow:hidden;
+    padding:0px 5px;
+    position:absolute;
+    text-align:center;
+}
+
+.x-date-picker-wk {
+    /*background:#A9BFD3 url(../../../library/ExtJS/resources/images/default/toolbar/bg.gif) repeat-x scroll left top;*/
+    background-color: #F0F0F0;
+	border-color:#D0D0D0;
+	border-right:1px solid #D0D0D0;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.x-date-picker-wk-wkrowover {
+	background-color: #F0F0F0;
+}
+.x-grid3-quickadd .x-grid3-header {
+    background: #f9f9f9 url(../../../images/grid3-dblhrow.gif) repeat-x left -2px;
+}
+
+.x-grid3-quickadd .new-row {
+    height:20px;
+}
+.x-grid3-quickadd .new-row .x-small-editor {
+    overflow:hidden;
+    width:100%;
+}
+.x-grid3-quickadd .new-row .x-small-editor input {
+    font-size:11px;
+}
+.x-ux-form-icontextfield-labelicon {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+    margin-top: -3px;  
+}
+
+.x-ux-pagingtb-main {
+    background-image: url(../../../images/oxygen/16x16/actions/table.png) !important;
+}
+
+.x-ux-pagingtb-deselect {
+    background-image: url(../../../images/oxygen/16x16/actions/edit-clear-list.png) !important;
+}
+
+.x-ux-pagingtb-selectvisible {
+    background-image: url(../../../images/oxygen/16x16/actions/edit-select-all.png) !important;
+}
+
+.x-ux-pagingtb-selectall {
+    background-image: url(../../../images/oxygen/16x16/actions/insert-table.png) !important;
+}
+
+.x-ux-pagingtb-toggle {
+    background-image: url(../../../images/oxygen/16x16/actions/system-switch-user.png) !important;
+}
+
+.ext-ux-grid-gridviewmenuplugin-menuBtn.x-grid3-hd-btn {
+    display:block;
+}
+
+.ext-ux-grid-gridviewmenuplugin-menuBtn.x-grid3-hd-btn {
+    background-image:url(../../../images/GridViewMenu.png);
+    width:16px;
+}
+
+a.ext-ux-grid-gridviewmenuplugin-menuBtn.x-grid3-hd-btn:hover {
+    background-position:-16px center;
+}
+
+.x-tool-expand .x-tool-toggle {
+    background-position:0pt -195px;
+}
+
+.x-tool-collapse .x-tool-toggle {
+    background-position:0pt -210px;
+}
+.x-ux-from-imagefield-text {
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+﻿.x-form-spinner-proxy{
+	/*background-color:#ff00cc;*/
+}
+.x-form-field-wrap img.x-form-spinner-trigger {
+    background:transparent url(../../../images/spinner.gif) no-repeat 0 0;
+}
+
+.x-form-field-wrap .x-form-spinner-overup{
+    background-position:-17px 0;
+}
+.x-form-field-wrap .x-form-spinner-clickup{
+    background-position:-34px 0;
+}
+.x-form-field-wrap .x-form-spinner-overdown{
+    background-position:-51px 0;
+}
+.x-form-field-wrap .x-form-spinner-clickdown{
+    background-position:-68px 0;
+}
+
+
+.x-trigger-wrap-focus .x-form-spinner-trigger{
+    background-position:-85px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-overup{
+    background-position:-102px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-clickup{
+    background-position:-119px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-overdown{
+    background-position:-136px 0;
+}
+.x-trigger-wrap-focus .x-form-spinner-clickdown{
+    background-position:-153px 0;
+}
+.x-trigger-wrap-focus .x-form-trigger{
+    border-bottom: 1px solid #7eadd9;
+}
+
+.x-form-field-wrap .x-form-spinner-splitter {
+	line-height:1px;
+	font-size:1px;
+    background:transparent url(../../../images/spinner-split.gif) no-repeat 0 0;
+	position:absolute;
+	cursor: n-resize;
+}
+.x-trigger-wrap-focus .x-form-spinner-splitter{
+    background-position:-14px 0;
+}
+
+/*
+    html editor plugin button icons
+*/
+.x-edit-indent {background: url(../../../images/oxygen/16x16/actions/format-indent-more.png) 0 0 no-repeat !important;}
+.x-edit-outdent {background: url(../../../images/oxygen/16x16/actions/format-indent-less.png) 0 0 no-repeat !important;}
+.x-edit-removeFormat {background: url(../../../images/oxygen/16x16/actions/eraser.png) 0 0 no-repeat !important;}
+
+/*
+	These are examples of styles for the button icons
+*/
+.x-edit-wordpaste {background: url(../images/document-word-text.png) 0 0 no-repeat !important;}
+.x-edit-table {background: url(../images/table.png) 0 0 no-repeat !important;}
+.x-edit-hr {background: url(../images/edit-rule.png) 0 0 no-repeat !important;}
+.x-edit-char {background: url(../images/edit-char.png) 0 0 no-repeat !important;}
+.x-edit-subscript {background: url(../images/text_sub.png) 0 0 no-repeat !important;}
+.x-edit-superscript {background: url(../images/text_super.png) 0 0 no-repeat !important;}
+
+/*
+	These styles are used for the character map
+*/
+.char-item {
+	float: left; 
+	border: 1px solid #99BBE8; 
+	margin: 3px; 
+	text-align: center; 
+	vertical-align: middle; 
+	width: 20px; 
+	height: 20px; 
+	font-size: 14px;
+	color: #15428B;
+	cursor: pointer;
+}
+
+.char-item.x-view-selected {
+	background-color: #777;
+}
+
+.char-over {
+	border: 1px solid #15428B;
+	background-color:#d0def0;
+}
+.x-ux-display .x-form-item {
+    overflow: hidden;
+    line-height: 12px;
+}
+
+.x-ux-display label.x-form-item-label {
+    color:#A0A0A0;
+	padding-right:5px;
+	text-align:right;
+	font-size:11px;
+	padding: 0;
+}
+
+.x-ux-display .x-form-element {
+    color:#404040;
+	font-family:verdana;
+	font-size:11px;
+}
+
+.x-ux-display textarea.x-ux-display-textarea {
+    background: none;
+    border: none;
+}
+
+.x-ux-display .x-ux-display-background-border textarea.x-ux-display-textarea {
+    background: none;
+    border: 1px solid #99BBE8;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+}
+
+.x-ux-display .x-ux-display-background-solid {
+    border: 1px solid #e5e6fe;
+    background-color: #e5e6fe;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    padding-left: 2px;
+}
+
+.x-ux-display .x-ux-display-background-border {
+    border: 1px solid #99BBE8;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+}
+
+.x-ux-display .x-ux-display-declaration {
+	color:#A0A0A0;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.x-ux-display .x-ux-display-header {
+    color:#505050;
+    font-size:10px;
+    font-weight:bold;
+}
+
+.x-ux-display .x-ux-display-header .x-tree-node-leaf img {
+    height: 16px;
+}
+
+.x-ux-display .x-ux-display-background-declaration {
+    position: absolute;
+    left:5px;
+    bottom:6px;
+}
+span.x-form-twin-triggers img.x-form-locked-trigger{
+    background-image: url(../../../images/locked-lockCombo.gif);
+    cursor:pointer;
+}
+
+span.x-form-twin-triggers img.x-form-unlocked-trigger{
+    background-image: url(../../../images/unlocked-lockCombo.gif);
+    cursor:pointer;
+}
+.x-ux-menu-title {
+    background: #ebeadb url(../../../library/ExtJS/resources/images/default/grid/grid3-hrow.gif) repeat-x;
+    border-bottom:1px solid #99bbe8;
+    color:#15428b;
+    font:bold 10px tahoma,arial,verdana,sans-serif;
+    display:block;
+    padding:3px;
+}
+.x-ux-messagebox-msg .x-box-mc {
+    font-size:14px;
+}
+#x-ux-messagebox-msg-div {
+    position:absolute;
+    left:35%;
+    top:10px;
+    width:250px;
+    z-index:20000;
+}
+.x-panel-footer .x-form-item label {
+    float: left;
+}
+.x-panel-footer .x-form-item div {
+    padding-top: 0px;
+}
+.tw-editdialog .x-panel-footer {
+	background-color: rgb(240, 240, 240);
+}
+.x-widget-tag-action-detach {
+    background-image:url(../../../images/oxygen/16x16/actions/draw-eraser.png) !important;
+}
+
+.x-widget-tag-tagitem {
+	margin: 1px 2px 1px 1px;
+	background-color: #FFF8E0;
+	height: 13px;
+    border: 1px solid gray;
+	float: left;
+	color: gray;
+}
+
+.x-widget-tag-tagitem-color {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	float: left;
+	background-color: #FFFFFF;
+	border-right: 1px solid gray;
+	widht: 4px;
+	height: 13px;
+}
+
+.x-widget-tag-tagitem-text {
+	padding: 0 5px 0 5px;
+    margin: 0 0 0 0;
+    line-height: 13px;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: italic;
+   
+}
+
+.x-widget-tag-tagitem-over {
+    /*background-color: #EFEFEF;*/
+    border: 1px solid black;
+    color: black;
+}
+
+.x-widget-tag-tagitem-selected {
+    background-color: #FFFFCE;
+    border: 1px solid black;
+    color: black;
+}
+
+.x-widget-tag-qtip-occurrence {
+    font-size: 8px;
+    font-style: bold;
+}
+.action_delThisFilter {
+    /*background-image:url(../../../images/oxygen/16x16/actions/edit-clear-locationbar-rtl.png) !important;*/
+    background-image:url(../../../images/minus-gray.png) !important;
+}
+
+.action_delAllFilter {
+    background-image:url(../../../images/x-gray.png) !important;
+}
+
+.action_addFilter {
+    background-image:url(../../../images/plus-gray.png) !important;
+}
+
+.action_saveFilter {
+    background-image:url(../../../images/oxygen/16x16/actions/document-save.png) !important;
+}
+
+.action_startFilter {
+    background-image:url(../../../images/oxygen/16x16/actions/edit-find.png) !important;
+}
+
+.x-panel-bwrap .tw-filtertoolbar  {
+	background-image: none;
+	background-color: #E5EDF8;
+}
+
+
+.tw-filtertoolbar  td { 
+	padding: 0px 5px 0px;
+}
+
+.tw-filtertoolbar .tw-ftb-frow-pbutton { 
+    padding: 0px 0px 0px;
+}
+
+.tw-filtertoolbar .tw-ftb-frow-mbutton { 
+    padding: 0px 0px 0px;
+}
+
+.tw-filtertoolbar .tw-ftb-frow-prefix {
+	text-align: right;
+}
+
+/* fix Ext.Button Layout */
+.tw-filtertoolbar .x-btn td {
+    padding: 0px;
+}
+.tw-filtertoolbar .x-btn-icon .x-btn-center {
+    padding:1px;
+}
+
+/*
+.tw-filtertoolbar .fw-ftb-actionrow td { 
+    padding: 0px 5px 1px;
+}
+*/
+
+.x-form-field-wrap .x-form-account-trigger {
+    background-image:url(../../../images/account-trigger.gif);
+    cursor:pointer;
+}
+.preview-panel{
+	padding:5px;
+	white-space:normal;
+	height:103px;
+	background-color:#e5edf8;
+	position:relative;
+	display:inline;
+	}
+.preview-panel img {
+    vertical-align: middle;
+    }
+.preview-panel-left{
+    float:left;
+    font-size:10px;
+    color: #404040;
+    font-family:verdana;
+    line-height: 16px;
+    }
+.preview-panel-right{
+    float:right;
+    font-size:10px;
+    color: #404040;
+    font-family:verdana;
+    line-height: 16px;
+    }
+.preview-panel-bold{
+font-weight: bold;
+	}
+.preview-panel-image{
+	vertical-align:middle;
+	margin:5px 2px 5px 5px;
+	width:90px;
+	height:113px;
+	padding:0px
+	}
+.preview-panel-office{
+	width:360px;
+	margin:5px 2px 5px 5px;
+	}
+.preview-panel-privat{
+	width:360px;
+	margin:5px 2px 5px 5px;
+	}
+.preview-panel-description {
+	width: 200px;
+	position: relative;  
+    height: 97px;
+    margin:5px 2px 5px 5px;
+    padding: 5px;
+    border: solid 3px #e5e6fe;
+    position: relative;
+    }
+.preview-panel-description,
+.preview-panel-description a,
+.preview-panel-description a:link,
+.preview-panel-description a:visited,
+.preview-panel-description a:hover,
+.preview-panel-description a:active {
+	 color:#a0a0a0;
+	 text-decoration: none;
+	}
+.preview-panel-timesheet-description {
+	width: 98%;
+	position: relative;  
+    height: 97px;
+	padding:3px;  
+    position: relative;
+    }	
+	
+.preview-panel-address{
+	width:150px;
+	padding: 5px;
+	}
+.preview-panel-contact{
+	width:180px;
+	padding: 5px;
+	}
+.bordercorner_1{
+ background-image: url(../../../images/preview/bordercorner_blue_1.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    }
+.bordercorner_2{
+    background-image: url(../../../images/preview/bordercorner_blue_2.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 4px;
+    }
+.bordercorner_3{
+    background-image: url(../../../images/preview/bordercorner_blue_3.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    }
+.bordercorner_4{
+    background-image: url(../../../images/preview/bordercorner_blue_4.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    } 
+.preview-panel-adressbook-nobreak{
+min-width:1100px;
+}
+.bordercorner_gray_1{
+ background-image: url(../../../images/preview/bordercorner_gray_1.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 5px;
+    height: 5px;
+    }
+.bordercorner_gray_2{
+    background-image: url(../../../images/preview/bordercorner_gray_2.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 5px;
+    height: 5px;
+    }
+.bordercorner_gray_3{
+    background-image: url(../../../images/preview/bordercorner_gray_3.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    left: -3px;
+    bottom: -3px;
+    width: 5px;
+    height: 5px;
+    }
+.bordercorner_gray_4{
+    background-image: url(../../../images/preview/bordercorner_gray_4.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+    width: 5px;
+    height: 5px;
+    }
+.preview-panel-declaration{
+    color: #a0a0a0;
+    font-size: 18px;
+    position: absolute;
+    font-weight: bold;
+    left: 5px;
+    bottom: 6px;
+    }
+.preview-panel-symbolcompare{
+	color:#a0a0a0;
+	width:45px;
+	text-align: right;
+	display: block;
+	float: left;
+	overflow: hidden;
+	padding-right: 5px;
+	}	
+.preview-panel-timesheet-left {
+	float:left;
+	position: relative;
+	width:48%;
+	height: 102px;
+	padding:5px;
+	margin:5px 2px 5px 5px;
+	font-family:verdana;    
+	}
+.preview-panel-timesheet-right {
+	float:left;
+	position: relative;
+	width:48%;
+	height: 97px;
+	padding:5px;
+	margin:5px 1px 5px 2px;
+	border: solid 3px #e5e6fe;
+	font-family:verdana;
+	}
+.preview-panel-timesheet-leftside{
+	width:180px;
+	padding: 5px;
+	}
+.preview-panel-timesheet-rightside{
+	width:auto;
+	padding: 5px;
+	}
+.preview-panel-timesheet-nobreak{
+min-width:900px;
+}
+
+.prefpanel_adminMode {
+    color: red;
+}
+
+
+.gx-popup-anc{background:transparent url(../images/default/anchor.png) no-repeat 0 0;position:relative;top:-1px;left:5px;z-index:2;height:16px;width:31px;}
+/**
+ * Tine 2.0
+ * 
+ * @package     Erp
+ * @license     http://www.gnu.org/licenses/agpl.html AGPL Version 3
+ * @author      Philipp Schuele <p.schuele@metaways.de>
+ * @copyright   Copyright (c) 2007-2008 Metaways Infosystems GmbH (http://www.metaways.de)
+ * @version     $Id: tine-all-debug.css,v 1.1 2010/04/13 21:55:59 hyokos Exp $
+ *
+ */
+ 
+.SalesIconCls {
+    background-image:url(../../../images/oxygen/16x16/apps/kcalc.png) !important;
+}
+
+/**
+ * Tine 2.0
+ * 
+ * @package     Timetracker
+ * @license     http://www.gnu.org/licenses/agpl.html AGPL Version 3
+ * @author      Philipp Schuele <p.schuele@metaways.de>
+ * @copyright   Copyright (c) 2007-2008 Metaways Infosystems GmbH (http://www.metaways.de)
+ * @version     $Id: tine-all-debug.css,v 1.1 2010/04/13 21:55:59 hyokos Exp $
+ *
+ */
+ 
+.TimetrackerIconCls {
+    background-image:url(../../../images/oxygen/16x16/actions/document-open-recent.png) !important;
+}
+
+.TimetrackerTimesheet {
+    background-image:url(../../../images/oxygen/16x16/actions/player-time.png) !important;
+}
+
+.TimetrackerTimeaccount {
+    background-image:url(../../../images/oxygen/16x16/actions/view-calendar-time-spent.png) !important;
+}
+.action_enable {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-apply.png) !important;
+}
+
+.action_disable {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-cancel.png) !important;
+}
+
+.action_settings {
+    background-image:url(../../../images/oxygen/16x16/actions/view-choose.png) !important;
+}
+
+.action_permissions {
+    background-image:url(../../../images/oxygen/16x16/status/dialog-password.png) !important;
+}
+
+.action_add {
+    background-image:url(../../../images/oxygen/16x16/actions/list-add.png) !important;
+}
+
+.action_addGroup {
+    background-image:url(../../../images/oxygen/16x16/actions/add-users.png) !important;
+}
+
+.action_resetHttpClientInfo {
+    background-image:url(../../../images/oxygen/16x16/actions/document-export.png) !important;
+}
+
+.action_openPhonesWebGui {
+    background-image:url(../../../images/oxygen/16x16/apps/internet-web-browser.png) !important;
+}
+.VoipmanagerIconCls {
+    background-image:url(../../../images/oxygen/16x16/apps/kcall.png) !important;
+}
+
+.cboxmiddle {
+    vertical-align: middle;
+    left: 2px !important;
+    top: 9px !important;
+}
+
+.x-form-check-wrap {
+    line-height:24px !important;
+}
+
+.down {
+    position: relative;
+    bottom: -14px;
+}
+
+.voipmanager-row-changed td{
+    font-weight: bold;
+}
+
+
+.action_email_new {
+    background-image:url(../../../images/oxygen/16x16/actions/mail-new.png) !important;
+}
+
+.action_email_flag {
+    background-image:url(../../../images/oxygen/16x16/actions/flag-red.png) !important;
+}
+
+.action_email_reply {
+    background-image:url(../../../images/oxygen/16x16/actions/mail-reply-sender.png) !important;
+}
+
+.action_email_replyAll {
+    background-image:url(../../../images/oxygen/16x16/actions/mail-reply-all.png) !important;
+}
+
+.action_email_forward {
+    background-image:url(../../../images/oxygen/16x16/actions/mail-forward.png) !important;
+}
+
+.action_update_cache {
+	background-image:url(../../../images/oxygen/16x16/actions/mail-receive.png) !important;
+}
+
+.action_mark_unread {
+    background-image:url(../../../images/oxygen/16x16/actions/mail-mark-unread.png) !important;
+}
+	
+/*
+.action_email_previuosMessage {
+    background-image:url(../../../images/oxygen/16x16/actions/find-previous.png) !important;
+}
+
+.action_email_nextMessage {
+    background-image:url(../../../images/oxygen/16x16/actions/find-next.png) !important;
+}
+*/
+
+.FelamimailIconCls {
+    background-image:url(../../../images/oxygen/16x16/apps/kmail.png) !important;
+}
+
+.action_folder_emptytrash {
+    background-image:url(../../../images/oxygen/16x16/actions/emptytrash.png) !important;
+}
+
+/***** flag classes ******/
+
+.flag_unread td{
+    font-weight: bold;
+}
+
+.flag_flagged {
+    color: #ff0000;
+}
+
+.flag_deleted td {
+    text-decoration: line-through;
+    color: #aaaaaa;
+}
+
+.FelamimailFlagIcon {
+    width: 12px;
+    height: 12px;
+}
+
+/**** preview *****/
+
+.preview-panel-felamimail {
+	padding: 5px;
+	overflow: 'hidden';
+}
+
+.preview-panel-felamimail-headers {
+    background-color: #dddddd;
+    overflow: 'hidden';
+}
+
+.preview-panel-felamimail-attachments {
+	margin-top: 5px;
+    background-color: #e8e8e8;
+    width: 100%;
+}
+
+.preview-panel-felamimail-attachments .tinebase-download-link{
+    /* float: left; */
+}
+
+.preview-panel-felamimail-body {
+    overflow: 'auto';	
+}
+
+/***** node classes ******/
+
+.felamimail-node-unread span {
+    font-weight: bold;
+}
+
+.felamimail-node-trash img.x-tree-node-icon {
+    background-image:url(../../../images/oxygen/16x16/places/user-trash.png);
+}
+
+.felamimail-node-trash-full img.x-tree-node-icon {
+    background-image:url(../../../images/oxygen/16x16/places/user-trash-full.png);
+}
+
+.felamimail-node-sent img.x-tree-node-icon {
+    background-image:url(../../../images/oxygen/16x16/places/mail-folder-sent.png);
+}
+
+.felamimail-node-inbox img.x-tree-node-icon {
+    background-image:url(../../../images/oxygen/16x16/places/mail-folder-inbox.png);
+}
+
+.felamimail-node-drafts img.x-tree-node-icon {
+    background-image:url(../../../images/oxygen/16x16/places/folder-txt.png);
+}
+
+.felamimail-node-templates img.x-tree-node-icon {
+    background-image:url(../../../images/oxygen/16x16/places/folder-tar.png);
+}
+
+.felamimail-node-junk img.x-tree-node-icon {
+    background-image:url(../../../images/oxygen/16x16/places/trashcan-empty-alt.png);
+}
+
+.felamimail-node-intelligent-marked img.x-tree-node-icon {
+    background-image:url(../../../images/oxygen/16x16/places/folder-important.png);
+}
+
+.felamimail-node-intelligent-unread img.x-tree-node-icon {
+    background-image:url(../../../images/oxygen/16x16/places/folder-bookmarks.png);
+    /* background-image:url(../../../images/oxygen/16x16/places/mail-folder-sent.png); */
+}
+
+.felamimail-node-account img.x-tree-node-icon {
+    background-image:url(../../../images/oxygen/16x16/places/user-home.png);
+}
+
+/*.felamimail-node-progress x-tree-node a span { */
+/* TODO make this work */
+.felamimail-node-progress x-tree-node-anchor a span {
+    color: '#dddddd';
+    text-align: 'right';
+    /* float: 'left'; */
+    width: '100%';
+}
+
+/***** email composing dialog ******/
+
+/* disable grid headers */
+#felamimail-recipient-grid .x-grid3-hd-row, #felamimail-attachment-grid .x-grid3-hd-row {
+    display:none;
+}
+
+#felamimail-recipient-grid td {
+    border-right: 1px solid #5555ff;	
+}
+
+.felamimail-body-blockquote {
+    margin: 5px 10px 0 3px;
+    padding-left: 10px;
+    border-left: 2px solid #000088;
+}
+
+.x-fmail-uploadrow .x-grid3-cell-inner {
+    background-image:url(../../../library/ExtJS/resources/images/default/grid/wait.gif);
+    background-repeat: no-repeat;
+    padding-left: 19px;
+}
+
+/********************************* Header *********************************/
+.cal-daysviewpanel-header {
+    position: relative;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.cal-daysviewpanel-header-inner {
+    position: relative;
+    background:#F9F9F9 url(../../../library/ExtJS/resources/images/default/grid/grid3-hrow.gif) repeat-x scroll 0 top;
+}
+
+.cal-daysviewpanel-dayheader-today, .cal-daysviewpanel-dayheader-day-wrap:hover {
+    background:#EBF3FD url(../../../library/ExtJS/resources/images/default/grid/grid3-hrow-over.gif) repeat-x scroll 0 bottom;
+    /*cursor: pointer; see ticket #1484*/
+}
+
+.cal-daysviewpanel-header-offset {
+    position: relative;
+    margin-left:45px;
+    margin-right:15px;
+    /*right:0;*/
+    top:0;
+}
+
+.cal-daysviewpanel-daysheader {
+    height: 24px;
+    cursor:default;
+    padding:1px 0 0;
+}
+
+.cal-daysviewpanel-dayheader {
+	float: left;
+}
+
+.cal-daysviewpanel-dayheader-day {
+	padding-top: 3px;
+	text-align: center;
+	color:black;
+    font-family:arial,tahoma,helvetica,sans-serif;
+    font-size:11px;
+    font-size-adjust:none;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.cal-daysviewpanel-dayheader-day-wrap {
+    border-left: 3px double #E1E1E1;
+    height: 23px;
+}
+
+.cal-daysviewpanel-wholedayheader {
+    position: relative;
+}
+/********************************* Body *********************************/
+.cal-daysviewpanel-body-inner {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.cal-daysviewpanel-scroller {
+	border-top: 1px solid #D0D0D0;
+    overflow:auto;
+    position:relative;
+}
+
+.cal-daysviewpanel-body-daycolumns {
+    position:absolute;
+    left:45px;
+    right:0;
+    top:0;
+}
+
+.cal-daysviewpanel-body-daycolumn {
+	float: left;
+	position: absolute;
+	overflow: hidden;
+}
+
+.cal-daysviewpanel-body-daycolumn-today {
+    background-color: #EBF3FD;
+}
+
+.cal-daysviewpanel-body-daycolumn-today .cal-daysviewpanel-daycolumn-row-on {
+	border-top: 1px solid #EDEDED;
+}
+
+.cal-daysviewpanel-body-daycolumn-inner {
+	border-left: 3px double #EDEDED;
+	height:100%;
+    position:absolute;
+    top:0;
+}
+
+.cal-daysviewpanel-daycolumn-row {
+	margin-left: 3px;
+}
+
+.cal-daysviewpanel-daycolumn-row:hover {
+	background-color:#DFE8F6;
+    /*cursor: pointer; see ticket #1484*/
+}
+
+.cal-daysviewpanel-timeRow-time {
+	width: 40px;
+	padding-top: 2px;
+	text-align: right;
+	color:black;
+	font-family:arial,tahoma,helvetica,sans-serif;
+	font-size:11px;
+	font-size-adjust:none;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	white-space:nowrap;
+}
+
+
+.cal-daysviewpanel-timeRow-on {
+	border-top: 1px solid #EDEDED;
+	position: absolute;
+	width: 100%;
+	/*background-color:#F1F1F1;*/
+}
+.cal-daysviewpanel-timeRow-off {
+	width: 100%;
+	position: absolute;
+	/*background-color:#FFFFFF;*/
+}
+
+.cal-daysviewpanel-daycolumn-row-on {
+}
+
+.cal-daysviewpanel-daycolumn-row-off {
+	border-top: 1px dotted #EDEDED;
+}
+
+/********************************* Events *********************************/
+.cal-daysviewpanel-event {
+	margin-left: 3px;
+	background: #EDEDED url(../../../images/white-gradiend.png) repeat-y right;
+	border-radius: 8px;
+    position: absolute;
+    border: 1px solid #808080;
+    overflow: hidden;
+    
+    text-align: left;
+    color:black;
+    font-family:arial,tahoma,helvetica,sans-serif;
+    font-size:11px;
+    font-size-adjust:none;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    white-space:nowrap;
+}
+
+.ext-gecko .cal-daysviewpanel-event {
+    -moz-border-radius: 8px;
+}
+
+.ext-safari .cal-daysviewpanel-event {
+    -webkit-border-radius: 8px;
+}
+
+/** todo: add khtml switch **/
+.cal-daysviewpanel-event {
+    -khtml-border-radius: 8px;
+}
+
+.cal-daysviewpanel-event-croptop {
+    border-top-style: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.ext-gecko .cal-daysviewpanel-event-croptop {
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+}
+
+.ext-safari .cal-daysviewpanel-event-croptop {
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+}
+
+/** todo: add khtml switch **/
+.cal-daysviewpanel-event-croptop {
+    -khtml-border-top-left-radius: 0px;
+    -khtml-border-top-right-radius: 0px;
+}
+
+.cal-daysviewpanel-event-cropbottom {
+    border-bottom-style: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.ext-gecko .cal-daysviewpanel-event-cropbottom {
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 0px;
+}
+
+.ext-safari .cal-daysviewpanel-event-cropbottom {
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+}
+
+/** todo: add khtml switch **/
+.cal-daysviewpanel-event-cropbottom {
+    -khtml-border-bottom-left-radius: 0px;
+    -khtml-border-bottom-right-radius: 0px;
+}
+
+.cal-daysviewpanel-event-drop-nodrop .x-dd-drop-icon {
+	left: 3px;
+	top: 0px;
+	background-color: transparent;
+    background-image:url(../../../library/ExtJS/resources/images/default/dd/drop-no.gif);
+}
+
+.cal-daysviewpanel-event-drop-ok .x-dd-drop-icon {
+    left: 3px;
+    top: 0px;
+    background-image:url(../../../library/ExtJS/resources/images/default/dd/drop-yes.gif);
+}
+
+.cal-daysviewpanel-event-header {
+	width: 100%;
+	position: absolute;
+    top: -1px;
+    height: 14px;
+    cursor: move;
+    background-color: #808080;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.ext-gecko .cal-daysviewpanel-event-header {
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+}
+
+.ext-safari .cal-daysviewpanel-event-header {
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+
+/** todo: add khtml switch **/
+.cal-daysviewpanel-event-header {
+    -khtml-border-top-left-radius: 8px;
+    -khtml-border-top-right-radius: 8px;
+}
+
+.cal-daysviewpanel-event-croptop .cal-daysviewpanel-event-header {
+	display: none;
+    border-top-style: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.ext-gecko .cal-daysviewpanel-event-croptop .cal-daysviewpanel-event-header {
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+}
+
+.ext-safari .cal-daysviewpanel-event-croptop .cal-daysviewpanel-event-header {
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+}
+
+/** todo: add khtml switch **/
+.cal-daysviewpanel-event-croptop .cal-daysviewpanel-event-header {
+    -khtml-border-top-left-radius: 0px;
+    -khtml-border-top-right-radius: 0px;
+}
+
+.cal-daysviewpanel-event-header-inner {
+	color: white;
+    position: absolute;
+    top: 1px;
+    left: 4px;
+}
+
+.cal-daysviewpanel-event-header-icons {
+    position: absolute;
+    right: 4px;
+}
+
+.cal-daysviewpanel-event-drop-ok .cal-daysviewpanel-event-header-inner,
+.cal-daysviewpanel-event-drop-nodrop .cal-daysviewpanel-event-header-inner {
+    left: 17px;
+}
+
+.cal-daysviewpanel-event-body {
+    position: absolute;
+    width: 100%;
+    top: 13px;
+    padding: 0px 4px;
+    white-space: normal;
+}
+
+.cal-daysviewpanel-event-active {
+    border-width: 2px;
+}
+
+.cal-daysviewpanel-event-onedit {
+    border-style: dashed;
+}
+
+/****************************** Whole Day Events ******************************/
+.cal-daysviewpanel-wholedayheader-daycols {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.cal-daysviewpanel-body-wholedaycolumn {
+    position: absolute;
+    height: 100%;
+}
+
+.cal-daysviewpanel-body-wholedaycolumn-over {
+	width: 100%;
+    height: 100%;
+    /*margin-left: 3px;*/
+}
+
+.cal-daysviewpanel-body-wholedaycolumn-over:hover {
+    background-color:#DFE8F6;
+    /*cursor: pointer; see ticket #1484*/
+}
+
+.cal-daysviewpanel-wholedayevent-body {
+	position: absolute;
+    width: 100%;
+    top: 1px;
+    cursor: move;
+    padding: 0px 4px;
+    white-space: normal;
+}
+
+.cal-daysviewpanel-event-cropleft {
+    border-left-style: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.ext-gecko .cal-daysviewpanel-event-cropleft {
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-bottomleft: 0px;
+}
+
+.ext-safari .cal-daysviewpanel-event-cropleft {
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+}
+
+/** todo: add khtml switch **/
+.cal-daysviewpanel-event-cropleft {
+    -khtml-border-top-left-radius: 0px;
+    -khtml-border-bottom-left-radius: 0px;
+}
+
+.cal-daysviewpanel-event-cropright {
+	background-image: none;
+    border-right-style: hidden;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.ext-gecko .cal-daysviewpanel-event-cropright {
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 0px;
+}
+
+.ext-safari .cal-daysviewpanel-event-cropright {
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+}
+
+/** todo: add khtml switch **/
+.cal-daysviewpanel-event-cropright {
+    -khtml-border-top-right-radius: 0px;
+    -khtml-border-bottom-right-radius: 0px;
+}
+
+.cal-daysviewpanel-wholedayevent-body .x-form-text {
+	position: absolute;
+	top: 0px;
+    padding-top: 0px;
+    height: 11px;
+}
+.cal-daysviewpanel-wholedayevent-body .x-form-field {
+    height: 11px;
+    font-size: 10px;
+}
+.cal-monthview {
+    color:black;
+    font-family:arial,tahoma,helvetica,sans-serif;
+    font-size:11px;
+    font-size-adjust:none;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    white-space:nowrap;
+}
+
+.cal-monthview-inner th {
+	border-top: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cal-monthview-wkcell {
+    border-right: 3px double #E1E1E1;
+    text-align: center;
+    vertical-align: middle;
+    /*background:#F0F0F0 url(../../../library/ExtJS/resources/images/default/toolbar/bg.gif) repeat-x scroll left top;*/
+    background-color: #F0F0F0;
+    border-color:#D0D0D0;
+}
+
+.cal-monthview-wkcell:hover{
+	background: #CDDCEF url(../../../library/ExtJS/resources/images/default/toolbar/bg.gif) repeat-x scroll left top;
+	/*cursor: pointer; see ticket #1484*/
+}
+
+.cal-monthview-wkcell-header {
+    border-right: 3px double #E1E1E1;
+}
+
+.cal-monthview-daycell {
+	vertical-align: top;
+	border-right: 1px solid #E1E1E1;
+    border-top: 1px solid #E1E1E1;
+}
+
+.cal-monthview-dayheader:hover {
+    background: #CDDCEF url(../../../library/ExtJS/resources/images/default/toolbar/bg.gif) repeat-x scroll left top;
+    /*cursor: pointer; see ticket #1484*/
+}
+
+.cal-monthview-inner-header,
+cal-monthview-wkcell-header {
+    position: relative;
+    background:#F9F9F9 url(../../../library/ExtJS/resources/images/default/grid/grid3-hrow.gif) repeat-x scroll 0 top;
+    height: 23px;
+}
+
+.cal-monthview-dayheader {
+	position: relative;
+    width: 100%;
+}
+
+.cal-monthview-dayheader-more {
+    position: absolute;
+    padding: 2px 5px;
+    border-collapse: separate;
+    color: #233D6D;
+    cursor: pointer;
+    text-align: left !important;
+}
+
+.cal-monthview-dayheader-date {
+	padding: 2px 5px;
+	border-collapse: separate;
+	color: #233D6D;
+	/*cursor: pointer; see ticket #1484*/
+	text-align: right !important;
+}
+
+.cal-monthview-daybody {
+    /*overflow: visible;*/
+}
+
+/*********************************** Events ***********************************/
+.cal-monthview-eventslice {
+    height: 18px;
+    overflow: visible;
+}
+
+.cal-monthview-event-icon,
+.cal-monthview-alldayevent-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.cal-monthview-event {
+	margin: 0px 0px;
+	width: 100%;
+	cursor: pointer;
+	/*overflow: hidden;*/
+}
+
+.cal-monthview-eventslice .cal-event-active {
+    cursor: move;
+}
+
+.cal-monthview-event-summary {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+.cal-monthview-alldayevent {
+	border-radius: 8px;
+	margin: 0px 0px 1px 0px;
+	background-color: red;
+	height: 17px;
+	width: 100%;
+	/*overflow: visible;*/
+}
+
+.ext-gecko .cal-monthview-alldayevent {
+    -moz-border-radius: 8px;
+}
+
+.ext-safari .cal-monthview-alldayevent {
+    -webkit-border-radius: 8px;
+}
+
+/** todo: add khtml switch **/
+.cal-monthview-alldayevent {
+    -khtml-border-radius: 8px;
+}
+
+.cal-monthview-alldayevent-cropleft {
+	margin-left: 0px;
+    border-left-style: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.ext-gecko .cal-monthview-alldayevent-cropleft {
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-bottomleft: 0px;
+}
+
+.ext-safari .cal-monthview-alldayevent-cropleft {
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+}
+
+/** todo: add khtml switch **/
+.cal-monthview-alldayevent-cropleft {
+    -khtml-border-top-left-radius: 0px;
+    -khtml-border-bottom-left-radius: 0px;
+}
+
+.cal-monthview-alldayevent-cropright {
+	margin-right: 0px;
+    background-image: none;
+    border-right-style: hidden;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.ext-gecko .cal-monthview-alldayevent-cropright {
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 0px;
+}
+
+.ext-safari .cal-monthview-alldayevent-cropright {
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+}
+
+/** todo: add khtml switch **/
+.cal-monthview-alldayevent-cropright {
+    -khtml-border-top-right-radius: 0px;
+    -khtml-border-bottom-right-radius: 0px;
+}
+
+.cal-monthview-alldayevent-summary {
+    white-space: nowrap;
+    overflow: hidden;
+    /*overflow: visible; */
+}
+
+.cal-monthview-event-info-hide {
+	display: none;
+}
+
+.cal-monthview-daypreviewbox .cal-monthview-event-info-hide {
+	display: block;
+}
+
+/******************************* daypreviewbox ********************************/
+.cal-monthview-daypreviewbox {
+	position: absolute;
+	border-bottom: 1px solid #E1E1E1;
+	overflow-y: auto;
+	z-index: 5000;
+}
+.CalendarIconCls {
+    background-image:url(../../../images/oxygen/16x16/apps/korganizer.png);
+}
+
+.cal-today-action {
+    background-image:url(../../../images/oxygen/16x16/actions/go-jump-today.png) !important;
+}
+
+.cal-day-view {
+    background-image:url(../../../images/oxygen/16x16/actions/view-calendar-day.png) !important;
+}
+
+.cal-upcoming-days-view {
+    background-image:url(../../../images/oxygen/16x16/actions/view-calendar-upcoming-days.png) !important;
+}
+
+.cal-week-view {
+    background-image:url(../../../images/oxygen/16x16/actions/view-calendar-week.png) !important;
+}
+
+.cal-month-view {
+    background-image:url(../../../images/oxygen/16x16/actions/view-calendar-month.png) !important;
+}
+
+.cal-resource {
+    background-image:url(../../../images/oxygen/16x16/devices/video-projector.png) !important;
+}
+    
+.cal-attendee-type-resource {
+    background-image:url(../../../images/oxygen/16x16/devices/video-projector.png) !important;
+    background-position:2px 2px;
+    background-repeat:no-repeat;
+}
+
+.cal-attendee-type-groupmember {
+    background-image:url(../../../images/groupmember.png) !important;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+/**** colendar select widget ****/
+.cal-calselectwidget-faketriggerwrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cal-calselectwidget-fakelist-item {
+	position: relative;
+	padding: 0;
+	border: 0;
+}
+
+.cal-calselectwidget-fakelist-calendar {
+    /*width: 290px;*/
+    float: left;
+    padding-left: 5px;
+}
+
+.cal-calselectwidget-fakelist-account {
+	width: 160px;
+	position: absolute;
+	right: 0;
+	border-left: 1px solid #B5B8C8;
+	padding-left: 5px;
+	background:url(../../../images/trigger2-bg.gif) repeat-x #EFEFEF;
+}
+
+/*** container select widget
+ * @todo move to container
+ */
+span.tw-containerselect-trigger2 img.tw-containerselect-trigger2-bg {
+    background:url(../../../images/trigger2-bg.gif) repeat-x;
+    width: 150px;
+    cursor:pointer;
+}
+.tw-containerselect-trigger2 {position: relative;}
+.x-form-trigger-over .tw-containerselect-trigger2-bg {background-position: 0 -24px;}
+.x-form-trigger-over .tw-containerselect-trigger2 {background-position: -17px 0;}
+
+.x-form-trigger-click .tw-containerselect-trigger2-bg {background-position: 0 -48px;}
+.x-form-trigger-click .tw-containerselect-trigger2 {background-position: -34px 0;}
+
+.x-form-field-wrap .x-form-arrow-trigger-rectangle {
+    background-image:url(../../../images/trigger-rect.gif);
+    cursor:pointer;
+}
+
+.cal-calselectwdgt {
+	position: relative;
+}
+
+/**** date picker ****/
+.cal-tree .x-date-picker {
+    border: 0;
+}
+
+.cal-datepicker-background .x-panel-body {
+    background-color: #EEEEEF;
+}
+
+.cal-event-icon {
+    background-image:url(../../../images/oxygen/16x16/actions/view-calendar-list.png) !important;
+    background-position: 8px;
+	background-repeat:no-repeat;
+	padding: 2px 0px 2px 26px;
+}
+
+/**** conflict window ****/
+.cal-conflict-heading {
+    height: 32px;
+}
+
+.cal-conflict-attendername {
+    font-weight: bold;
+}
+
+.cal-conflict-eventinfos {
+    margin-left: 15px;
+}
+/**
+ * Tine 2.0
+ * 
+ * @package     Tasks
+ * @license     http://www.gnu.org/licenses/agpl.html AGPL Version 3
+ * @author      Cornelius Weiss <c.weiss@metaways.de>
+ * @copyright   Copyright (c) 2007-2008 Metaways Infosystems GmbH (http://www.metaways.de)
+ * @version     $Id: tine-all-debug.css,v 1.1 2010/04/13 21:55:59 hyokos Exp $
+ *
+ */
+ 
+.TasksIconCls {
+    background-image:url(../../../images/oxygen/16x16/actions/todo.png) !important;
+}
+
+.TasksMainGridStatus {
+    width: 12px;
+	height: 12px;
+}
+
+/***** tasks grid panel classes ******/
+
+.tasks-grid-overdue {
+    color: #aa0000;
+}
+
+.tasks-grid-duetoday {
+    color: #00aa00;
+}
+
+.action_enable {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-apply.png) !important;
+}
+
+.action_disable {
+    background-image:url(../../../images/oxygen/16x16/actions/dialog-cancel.png) !important;
+}
+
+.action_settings {
+    background-image:url(../../../images/oxygen/16x16/actions/view-choose.png) !important;
+}
+
+.action_permissions {
+    background-image:url(../../../images/oxygen/16x16/status/dialog-password.png) !important;
+}
+
+.action_addGroup {
+    background-image:url(../../../images/oxygen/16x16/actions/add-users.png) !important;
+}
+
+.action_password {
+    background-image:url(../../../images/oxygen/16x16/actions/password.png) !important;
+}
+
+.AdminIconCls {
+    background-image:url(../../../images/oxygen/16x16/apps/systemtray.png) !important;
+}
+
+.admin-node-accesslog {
+    background-image:url(../../../images/oxygen/16x16/actions/view-process-own.png) !important;
+}
+
+.admin-node-user {
+    background-image:url(../../../images/oxygen/16x16/places/user-identity.png) !important;
+}
+
+.admin-node-groups {
+    background-image:url(../../../images/oxygen/16x16/actions/users.png) !important;
+}
+
+.admin-node-computers {
+    background-image:url(../../../images/oxygen/16x16/places/network-local.png) !important;
+}
+
+.admin-node-applications {
+    background-image:url(../../../images/oxygen/16x16/places/user-desktop.png) !important;
+}
+
+.x-tree-node-collapsed .x-tree-node-icon.x-tree-node-leaf-roles, 
+.x-tree-node-expanded .x-tree-node-icon.x-tree-node-leaf-roles, 
+.x-tree-node-leaf .x-tree-node-icon.x-tree-node-leaf-roles ,
+.x-tree-node-leaf-roles {
+	width:1px;
+}
+
+/**
+ * Tine 2.0
+ * 
+ * @package     Phone
+ * @license     http://www.gnu.org/licenses/agpl.html AGPL3
+ * @author      Lars Kneschke <l.kneschke@metaways.de>
+ * @copyright   Copyright (c) 2008 Metaways Infosystems GmbH (http://www.metaways.de)
+ * @version     $Id: tine-all-debug.css,v 1.1 2010/04/13 21:55:59 hyokos Exp $
+ *
+ */
+ 
+.PhoneIconCls {
+    background-image:url(../../../images/oxygen/16x16/apps/kcall.png) !important;
+}
+
+.action_DialNumber {
+    background-image:url(../../../images/oxygen/16x16/devices/audio-headset.png) !important;
+}
+
+.CrmIconCls {
+    background-image:url(../../../images/oxygen/16x16/actions/datashowchart.png) !important;
+}
+
+.actionPrev {
+    background-image:url(../../../images/oxygen/16x16/actions/arrow-left.png) !important;
+}
+
+.actionNext {
+    background-image:url(../../../images/oxygen/16x16/actions/arrow-right.png) !important;
+}
+
+.action1DayView {
+    background-image:url(../../../images/oxygen/16x16/actions/1day.png) !important;
+}
+
+.action5DaysView {
+    background-image:url(../../../images/oxygen/16x16/actions/5days.png) !important;
+}
+
+.action7DaysView {
+    background-image:url(../../../images/oxygen/16x16/actions/7days.png) !important;
+}
+
+.actionMonthview {
+    background-image:url(../../../images/oxygen/16x16/actions/month.png) !important;
+}
+
+.actionAdd {
+    /* background-image:url(../../../images/oxygen/16x16/actions/edit-add.png) !important; */
+    background-image:url(../../../images/oxygen/16x16/actions/list-add.png) !important;
+}
+
+.actionRemove {
+    background-image:url(../../../images/oxygen/16x16/actions/list-remove.png) !important;
+}
+
+.actionAddTask {
+    background-image:url(../../../images/oxygen/16x16/actions/todo.png) !important;
+}
+
+.actionEdit {
+    background-image:url(../../../images/oxygen/16x16/actions/edit.png) !important;
+}
+
+.actionDelete {
+    background-image:url(../../../images/oxygen/16x16/actions/edit-delete.png) !important;
+}
+
+.actionDisplayEvents {
+    background-image:url(../../../images/oxygen/16x16/actions/user.png) !important;
+}
+
+.actionSaveAndClose {
+    background-image:url(../../../images/oxygen/16x16/actions/document-save.png) !important;
+}
+
+.actionApplyChanges {
+    background-image:url(../../../images/oxygen/16x16/actions/save-all.png) !important;
+}
+
+.filterSearch {
+    background-image:url(../../../images/oxygen/16x16/actions/search-filter.png) !important;
+}
+
+.repeatAction {
+    background-image:url(../../../images/oxygen/16x16/actions/xdays.png) !important;
+}
+
+.showEndedLeadsAction {
+    background-image:url(../../../images/oxygen/16x16/actions/ark-extract.png) !important;
+}
+
+.hideEndedLeadsAction {
+    background-image:url(../../../images/oxygen/16x16/actions/ark-delete.png) !important;
+}
+
+.showDetailsAction {
+    background-image:url(../../../images/oxygen/16x16/actions/fileview-detailed.png) !important;
+}
+
+.hideDetailsAction {
+    background-image:url(../../../images/oxygen/16x16/actions/fileview-column.png) !important;
+}
+
+
+.activities-item-small {
+    padding: 2px 4px; 
+    border-bottom: 1px solid #B5B8C8;
+    font-size: 11px;
+}
+
+.activities-item-small i {
+
+}
+
+.productSummary-item-small {
+    padding: 2px 4px; 
+    border-bottom: 1px solid #B5B8C8;
+    font-size: 11px;    
+}
+
+.contact-item-small {
+    padding: 2px 4px; 
+    border-bottom: 1px solid #B5B8C8;
+    font-size: 11px;
+}
+
+.contact-item {
+    padding: 2px 4px; 
+    border-bottom: 1px solid #B5B8C8;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+    color: #999999
+}
+
+.contact-item p {
+    line-height: 13px;
+    margin: 7px 0px;
+}
+
+.contacts_background {
+    background: #FFFFFF url(../../../extjs/resources/images/default/form/text-bg.gif) repeat-x scroll 0pt 19pt;
+    border: 1px solid #B5B8C8;
+    margin-right: 10px;
+}
+
+.contactIcon {
+	position: relative;
+}
+
+.contactIconResponsible {
+    background-image:url(../../../images/oxygen/16x16/apps/preferences-desktop-user.png) !important;
+}
+
+.contactIconCustomer {
+    background-image:url(../../../images/oxygen/16x16/apps/system-users.png) !important;
+}
+
+.contactIconPartner {
+    background-image:url(../../../images/oxygen/16x16/actions/view-process-own.png) !important;
+}
+
+.productSummary {
+    background: transparent none repeat;
+    border: 0px;
+    color: #000000;
+    opacity: 1;
+    padding: 0px 0px;
+}
+
+.x-grid3-cell-inner, .x-grid3-hd-inner {
+    white-space: normal;
+}
+
+
+.lowPadding {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.borderTop {
+    border-top: solid;
+    border-top-color: #bbbbbb;
+    border-top-width: 1px;
+    
+}
+
+.x-view-over {
+                background-color: #efefef
+            }
+
+.contact-grid {
+	border: 1px solid #cccccc;
+}
+
+/** details panel **/
+.crm-leadgrid-detailspanel-status {
+	margin: 5px 2px 5px 5px;
+    width: 20%;
+}
+
+.crm-leadgrid-detailspanel-contacts {
+    margin: 5px 2px 5px 5px;
+    width: 36%;
+}
+
+.crm-leadgrid-detailspanel .preview-panel-description {
+    margin: 5px 2px 5px 5px;
+    width: 36%;
+    overflow: hidden;
+}
+
+.crm-leadgrid-detailspanel-status .preview-panel-symbolcompare{
+    width: 90px;    
+}
+
+.crm-leadgrid-detailspanel-contact {
+    width: 50%;
+    float:right;
+	height:108px;
+	position:relative;
+}
+.action_addList {
+	background-image:url(../../../images/oxygen/16x16/actions/add-users.png) !important;
+}
+
+.action_edit {
+	background-image:url(../../../images/oxygen/16x16/actions/edit.png) !important;
+}
+
+.action_delete {
+	background-image:url(../../../images/oxygen/16x16/actions/edit-delete.png) !important;
+}
+
+.action_displayContacts {
+	background-image:url(../../../images/oxygen/16x16/actions/user.png) !important;
+}
+
+.action_displayLists {
+	background-image:url(../../../images/oxygen/16x16/actions/users.png) !important;
+}
+
+.AddressbookIconCls {
+    background-image:url(../../../images/oxygen/16x16/apps/kaddressbook.png) !important;
+}
+
+.x-form-item-float-left {
+    float: left;
+    margin-right: 5px;
+}
+

@@ -1,0 +1,253 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tine 2.0 - Tasks\n"
+"POT-Creation-Date: 2008-05-17 22:12+0100\n"
+"PO-Revision-Date: 2009-09-15 08:44+0100\n"
+"Last-Translator: Dimitrina Mileva <dimitrina@gmx.de>\n"
+"Language-Team: Tine 2.0 Translators\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Bulgarian\n"
+"X-Poedit-Country: NOT SPECIFIED / ANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: Acl/Rights.php:89
+msgid "manage shared task lists"
+msgstr "организира списък на задачи"
+
+#: Acl/Rights.php:90
+msgid "Create new shared tasks lists"
+msgstr "Състави нов списък на споделени задачи"
+
+#: Controller/Task.php:166
+msgid "Notification for Task "
+msgstr ""
+
+#: Controller.php:97
+#, python-format
+msgid "%s's personal tasks"
+msgstr "%s's лични задачи"
+
+#: js/EditDialog.js:173 js/GridPanel.js:94 js/GridPanel.js:171
+msgid "Summary"
+msgstr "Общо"
+
+#: js/EditDialog.js:178
+msgid "Due date"
+msgstr "Краен срок"
+
+#: js/EditDialog.js:181 js/GridPanel.js:190 Model/Task.php:184
+msgid "Priority"
+msgstr "Приоритет"
+
+#: js/EditDialog.js:184
+#, fuzzy
+msgid "Add Responsible ..."
+msgstr "Отговорник"
+
+#: js/EditDialog.js:191
+msgid "Notes"
+msgstr "Бележки"
+
+#: js/EditDialog.js:192
+msgid "Enter description..."
+msgstr "Напиши описание"
+
+#: js/EditDialog.js:197
+msgid "Percentage"
+msgstr "Процент"
+
+#: js/EditDialog.js:201 js/GridPanel.js:217 Model/Task.php:185
+msgid "Status"
+msgstr "Статус"
+
+#: js/EditDialog.js:205
+msgid "Completed"
+msgstr "Завършен"
+
+#: js/GridPanel.js:56
+msgid "Do you really want to delete the selected task?"
+msgid_plural "Do you really want to delete the selected tasks?"
+msgstr[0] "Наистина ли желаете да изтриете селектираната задача?"
+msgstr[1] "Наистина ли желаете да изтриете селектираните задачи?"
+
+#: js/GridPanel.js:93
+msgid "Quick search"
+msgstr ""
+
+#: js/GridPanel.js:95 js/GridPanel.js:182
+msgid "Due Date"
+msgstr "Краен срок"
+
+#: js/GridPanel.js:96 js/GridPanel.js:238
+msgid "Responsible"
+msgstr "Отговорник"
+
+#: js/GridPanel.js:120
+msgid "Failed"
+msgstr "Неуспех"
+
+#: js/GridPanel.js:120
+msgid "Could not save task."
+msgstr "Задачата не може да бъде запаметена."
+
+#: js/GridPanel.js:167
+#, fuzzy
+msgid "Tags"
+msgstr "Задачa"
+
+#: js/GridPanel.js:168
+msgid "Lead"
+msgstr ""
+
+#: js/GridPanel.js:178
+msgid "Add a task..."
+msgstr "Добави задача"
+
+#: js/GridPanel.js:204 Model/Task.php:186
+msgid "Percent"
+msgstr "Процент"
+
+#: js/GridPanel.js:231
+msgid "Creation Time"
+msgstr "Създаден на"
+
+#: js/GridPanel.js:285
+msgid "Show closed"
+msgstr "Покажи приключени задачи"
+
+#: js/Status.js:45 Setup/setup.xml:339
+msgid "IN-PROCESS"
+msgstr "В ПРОЦЕС"
+
+#: js/Tasks.js:87
+msgid "Task"
+msgid_plural "Tasks"
+msgstr[0] "Задачa"
+msgstr[1] "Задачи"
+
+#: js/Tasks.js:87
+msgid "Tasks"
+msgstr "Задачи"
+
+#: js/Tasks.js:91
+msgid "to do list"
+msgid_plural "to do lists"
+msgstr[0] "списък със задачи"
+msgstr[1] "списъка със задачи"
+
+#: js/Tasks.js:91
+msgid "to do lists"
+msgstr "списъци със задачи"
+
+#: Model/Task.php:181
+msgid "Due"
+msgstr ""
+
+#: Model/Task.php:182
+msgid "Organizer"
+msgstr ""
+
+#: Model/Task.php:183
+#, fuzzy
+msgid "Description"
+msgstr "Напиши описание"
+
+#: Setup/setup.xml:295
+msgid "NEEDS-ACTION"
+msgstr "НЕОБХОДИМА Е НАМЕСА"
+
+#: Setup/setup.xml:317
+msgid "COMPLETED"
+msgstr "ЗАВЪРШЕНИ"
+
+#: Setup/setup.xml:361
+msgid "CANCELLED"
+msgstr "ПРЕКЪСНАТИ"
+
+#, fuzzy
+#~ msgid "to to list"
+#~ msgstr "списък със задачи"
+
+#, fuzzy
+#~ msgid "Tasks) "
+#~ msgstr "Задачи"
+
+#~ msgid "Loading Task..."
+#~ msgstr "Зарежда задача..."
+
+#~ msgid "Please Wait"
+#~ msgstr "Моля изчакайте"
+
+#~ msgid "Add New Task"
+#~ msgstr "Добави нова задача"
+
+#~ msgid "Edit Task \"{0}\""
+#~ msgstr "Редакция но задача \"{0}\""
+
+#~ msgid "Saved in"
+#~ msgstr "Съхранен в"
+
+#, fuzzy
+#~ msgid "Do you realy want to delte the selected task?"
+#~ msgid_plural "Do you relay want to delete the selected tasks?"
+#~ msgstr[0] "Наистина ли желаете да изтриете селектираната задача?"
+#~ msgstr[1] "Наистина ли желаете да изтриете селектираните задачи?"
+
+#~ msgid "Could not delete task(s)."
+#~ msgstr "Задачата (-ите) не може(могат) да бъде(бъдатат) изтрита(-и)"
+
+#~ msgid "Edit task"
+#~ msgstr "Редактирай задача"
+
+#~ msgid "Add task"
+#~ msgstr "Добави задача"
+
+#~ msgid "Delete task"
+#~ msgid_plural "Delete tasks"
+#~ msgstr[0] "Изтрий задача"
+#~ msgstr[1] "Изтрий задачи"
+
+#~ msgid "Enter searchfilter"
+#~ msgstr "Задай филтър на търсене"
+
+#~ msgid "Search:"
+#~ msgstr "Търси:"
+
+#~ msgid "Displaying tasks {0} - {1} of {2}"
+#~ msgstr "Намерени задачи {0} - {1} от {2}"
+
+#~ msgid "No tasks to display"
+#~ msgstr "Няма намерени задачи"
+
+#~ msgid "No Tasks to display"
+#~ msgstr "Няма намерени задачи"
+
+#~ msgid "Please wait"
+#~ msgstr "Моля изчакайте"
+
+#~ msgid "Saving Task"
+#~ msgstr "Запамети задача"
+
+#~ msgid "Errors"
+#~ msgstr "Грешки"
+
+#~ msgid "Please fix the errors noted."
+#~ msgstr "Моля коригирайте грешките."
+
+#~ msgid "Confirm"
+#~ msgstr "Потвърди"
+
+#~ msgid "Do you really want to delete this task?"
+#~ msgstr "Наистина ли желаете да изтриете тази задача?"
+
+#~ msgid "Please wait a moment..."
+#~ msgstr "Моля изчакайте един момент"
+
+#~ msgid "Enter short name..."
+#~ msgstr "Задай съкратено име"
+
+#~ msgid "Folder"
+#~ msgstr "Папка"

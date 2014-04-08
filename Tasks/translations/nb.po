@@ -1,0 +1,165 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tine 2.0 - Tasks\n"
+"POT-Creation-Date: 2008-05-17 22:12+0100\n"
+"PO-Revision-Date: 2009-12-14 15:36+0100\n"
+"Last-Translator: Ronny Gonzales <gonzito@online.no>\n"
+"Language-Team: Tine 2.0 Translators\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Norwegian Bokmål\n"
+"X-Poedit-Country: NOT SPECIFIED / ANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: Acl/Rights.php:89
+msgid "manage shared task lists"
+msgstr "behandle delte oppgaver lister"
+
+#: Acl/Rights.php:90
+msgid "Create new shared tasks lists"
+msgstr "Opprett ny delt oppgaver liste"
+
+#: Controller/Task.php:166
+msgid "Notification for Task "
+msgstr "Varslinger for Oppgaver"
+
+#: Controller.php:97
+#, python-format
+msgid "%s's personal tasks"
+msgstr "%s's personlige oppgaver"
+
+#: js/EditDialog.js:173 js/GridPanel.js:94 js/GridPanel.js:171
+msgid "Summary"
+msgstr "Oppsumering"
+
+#: js/EditDialog.js:178
+msgid "Due date"
+msgstr "Utløps dato"
+
+#: js/EditDialog.js:181 js/GridPanel.js:190 Model/Task.php:184
+msgid "Priority"
+msgstr "Prioritet"
+
+#: js/EditDialog.js:184
+msgid "Add Responsible ..."
+msgstr "Legg til Ansvarlige ..."
+
+#: js/EditDialog.js:191
+msgid "Notes"
+msgstr "Notater"
+
+#: js/EditDialog.js:192
+msgid "Enter description..."
+msgstr "Tast inn beskrivelse..."
+
+#: js/EditDialog.js:197
+msgid "Percentage"
+msgstr "Prosent"
+
+#: js/EditDialog.js:201 js/GridPanel.js:217 Model/Task.php:185
+msgid "Status"
+msgstr "Status"
+
+#: js/EditDialog.js:205
+msgid "Completed"
+msgstr "Fullført"
+
+#: js/GridPanel.js:56
+msgid "Do you really want to delete the selected task?"
+msgid_plural "Do you really want to delete the selected tasks?"
+msgstr[0] "Vil du virkelig slette valgt oppgave?"
+msgstr[1] "Vil du virkelig slette valgte oppgaver?"
+
+#: js/GridPanel.js:93
+msgid "Quick search"
+msgstr "Hurtig søk"
+
+#: js/GridPanel.js:95 js/GridPanel.js:182
+msgid "Due Date"
+msgstr "Utløps Dato"
+
+#: js/GridPanel.js:96 js/GridPanel.js:238
+msgid "Responsible"
+msgstr "Ansvarlig"
+
+#: js/GridPanel.js:120
+msgid "Failed"
+msgstr "Feilet"
+
+#: js/GridPanel.js:120
+msgid "Could not save task."
+msgstr "Klarte ikke å lagre oppgave."
+
+#: js/GridPanel.js:167
+msgid "Tags"
+msgstr "Merker"
+
+#: js/GridPanel.js:168
+msgid "Lead"
+msgstr ""
+
+#: js/GridPanel.js:178
+msgid "Add a task..."
+msgstr "Legg til en oppgave..."
+
+#: js/GridPanel.js:204 Model/Task.php:186
+msgid "Percent"
+msgstr "Prosent"
+
+#: js/GridPanel.js:231
+msgid "Creation Time"
+msgstr "Opprettelses Tid"
+
+#: js/GridPanel.js:285
+msgid "Show closed"
+msgstr "Vis lukkede"
+
+#: js/Status.js:45 Setup/setup.xml:339
+msgid "IN-PROCESS"
+msgstr "I-PROSESS"
+
+#: js/Tasks.js:87
+msgid "Task"
+msgid_plural "Tasks"
+msgstr[0] "Oppgave"
+msgstr[1] "Oppgaver"
+
+#: js/Tasks.js:87
+msgid "Tasks"
+msgstr "Oppgaver"
+
+#: js/Tasks.js:91
+msgid "to do list"
+msgid_plural "to do lists"
+msgstr[0] "å gjør liste"
+msgstr[1] "å gjøre lister"
+
+#: js/Tasks.js:91
+msgid "to do lists"
+msgstr "å gjøre lister"
+
+#: Model/Task.php:181
+msgid "Due"
+msgstr "Utløper"
+
+#: Model/Task.php:182
+msgid "Organizer"
+msgstr "Planlegger"
+
+#: Model/Task.php:183
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: Setup/setup.xml:295
+msgid "NEEDS-ACTION"
+msgstr "TRENGER-HANDLING"
+
+#: Setup/setup.xml:317
+msgid "COMPLETED"
+msgstr "FULLFØRT"
+
+#: Setup/setup.xml:361
+msgid "CANCELLED"
+msgstr "AVBRUTT"
